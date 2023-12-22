@@ -1,12 +1,12 @@
 # Pose
 
-pose
+Position and Orientation
 
-## Attributes
+## Properties
 
-| Name | Data Type | Description |
-| ------- | -------- | ----------------- |
-| `x` | number | x component of position coordinates |
-| `y` | number | y component of position coordinates |
-| `yaw` | number | heading value in radians |
-| `angle` | number | optional; facing angle value |
+| Name    | Data Type | Description                        |
+| ------- | --------- | ---------------------------------- |
+| `x`     | number    | x component of the position coordinate, Unit: meters |
+| `y`     | number    | y component of the position coordinate, Unit: meters |
+| `yaw`   | number    | Orientation in radians, Unit: radians |
+| `angle` | number    | Optional; Orientation in degrees, Unit: degrees |
