@@ -1,0 +1,40 @@
+# SDK Privatization Example
+
+The SDK can be used normally after the initialization is completed. The following is an example of SDK privatization code:
+
+```typescript
+import { AXRobot, AppMode } from "@autoxing/robot-js-sdk";
+
+// create an instance of AXRobot
+const axRobot = new AXRobot("<appId>", "<appSecret>", AppMode.WAN_APP "<serverUrl>", "websocketUrl");
+
+// Initialize the AXRobot instance
+const successed = await axRobot.init();
+if (successed) {
+   try {
+     // connect to the specified robot
+     const res = await axRobot.connectRobot({
+       robotId: "<robotId>"
+     });
+     console.log("connect success: " + res.robotId);
+     // do something with robot
+   } catch(err) {
+     console.log(err.errText)
+   }
+} else {
+   // initialization failed
+}
+```
+
+> * **appId** - the application ID, which can be applied to relevant operators
+> * **appSecret** - data request key, which can be provided to relevant operators
+> * **serverUrl** - privatization service address
+> * **websocketUrl** - privatization websocket address - optional
+
+> * **explain:** 
+> * **1:** Need to use SDK version v1.0.74 or above
+> * **2:** If you only fill in serverUrl and do not fill in websocketUrl, then websocketUrl will automatically generate a websocket connection address based on serverUrl
+> * **example:** <http://127.0.0.1:8080/> -> <ws://127.0.0.1:8080/>、<https://127.0.0.1:8080/> -> <wss://127.0.0.1:8080/>
+> * **3:** If you fill in websocketUrl, use the current url
+
+[example](../example/#/)
