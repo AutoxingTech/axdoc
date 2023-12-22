@@ -84,10 +84,10 @@ extra:
 
   alternate:
     - name: English
-      link: /en/ 
+      link: /axdoc/en/ 
       lang: en
     - name: 中文
-      link: /zh/
+      link: /axdoc/zh/
       lang: zh
   
 
