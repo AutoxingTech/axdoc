@@ -1,3 +1,4 @@
 # How to Get appid appSecret
 
-Need to contact technical support.
+???+ question "How to Get appid appSecret"
+    Need to contact technical support.
