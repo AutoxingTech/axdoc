@@ -3,7 +3,13 @@
 axRobot initialization failed.
 
 ## Return Value
-{ errCode: 33000, errText: 'Initialization failed. Please check app id and app secret.', robotId: undefined }
+```javascript
+{ 
+    errCode: 33000, 
+    errText: 'Initialization failed. Please check app id and app secret.', 
+    robotId: undefined 
+}
+```
 
 ## Troubleshooting
 - Please check if the app id and app secret are correct.
