@@ -8,7 +8,7 @@
 
 | 名称         | 类型                              | 说明       |
 | ------------ | --------------------------------- | ---------- |
-| `serverInfo` | [ServerInfo](../../Define/Define-ServerInfo) | 服务器信息 |
+| `serverInfo` | [ServerInfo](../../../Define/Define-ServerInfo) | 服务器信息 |
 
 ### 返回值 `Promise.<boolean>`
 

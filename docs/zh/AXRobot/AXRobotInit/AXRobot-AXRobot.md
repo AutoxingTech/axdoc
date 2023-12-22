@@ -10,7 +10,7 @@
 | -------- | -------- | -------- |
 | `appId` | string   | appId |
 | `appSecret` | string   | appSecret |
-| [`AppMode`](../../Define/Define-AppMode) | string   | 应用模式 |
+| [`AppMode`](../../../Define/Define-AppMode) | string   | 应用模式 |
 | `serverUrl` | string   | serverUrl: <br>大陆接入点:"https://api.autoxing.com/"<br>海外接入点:"https://apiglobal.autoxing.com/"<br> |
 | `websocketUrl` | string   | websocketUrl:<br>大陆接入点:"wss://service.autoxing.com/"<br>海外接入点:"wss://serviceglobal.autoxing.com/" |
 

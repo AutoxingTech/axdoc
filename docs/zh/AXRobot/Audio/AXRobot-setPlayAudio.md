@@ -8,7 +8,7 @@
 
 | 名称   | 类型   | 说明                     |
 | ------ | ------ | ------------------------ |
-| `playAudio` | [PlayAudio](../../Define/Define-PlayAudio) | 播报音频 |
+| `playAudio` | [PlayAudio](../../../Define/Define-PlayAudio) | 播报音频 |
 
 ### 返回值 `Promise.<boolean>`
 

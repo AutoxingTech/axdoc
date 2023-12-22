@@ -8,7 +8,7 @@
 
 | 名称       | 数据类型                                   | 说明                   |
 | ---------- | ------------------------------------------ | ---------------------- |
-| `listener` | [OnRobotListner](../../Define/Define-OnRobotListener) | 机器人实时状态订阅回调 |
+| `listener` | [OnRobotListner](../../../Define/Define-OnRobotListener) | 机器人实时状态订阅回调 |
 
 ### 返回值
 

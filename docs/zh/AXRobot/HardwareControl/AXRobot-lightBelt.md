@@ -10,7 +10,7 @@
 
 | 名称        | 类型                            | 说明 |
 | ----------- | ------------------------------- | ---- |
-| `lightBelt` | [LightBelt](../../Define/Define-LightBelt) | 档位 |
+| `lightBelt` | [LightBelt](../../../Define/Define-LightBelt) | 档位 |
 
 ### 返回值 `Promise.<boolean>`
 
