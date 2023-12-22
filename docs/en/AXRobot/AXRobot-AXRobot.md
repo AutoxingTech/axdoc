@@ -14,7 +14,8 @@ Constructor
 | `serverUrl` | string   | serverUrl: <br>Mainland access point:"https://api.autoxing.com/"<br>Overseas access point:"https://apiglobal.autoxing.com/"<br> |
 | `websocketUrl` | string   | websocketUrl:<br>Mainland access point:"wss://service.autoxing.com/"<br>Overseas access point:"wss://serviceglobal.autoxing.com/" |
 
-
+???+ warning "warning"
+    ""
 
 
 ### Return Value
@@ -23,11 +24,32 @@ Constructor
 
 ### Example
 
-```typescript
-import { AXRobot, AppMode } from "@autoxing/robot-js-sdk";
+=== "Mainland access point"
 
-// Create a private instance of AXRobot
-const axRobot = new AXRobot("<appId>", "<appSecret>", AppMode.WAN_APP, "<serverUrl>", "<websocketUrl>");
+    ```typescript
+        import { AXRobot, AppMode } from "@autoxing/robot-js-sdk";
 
-```
+        const axRobot = new AXRobot(
+            "<appId>", 
+            "<appSecret>",
+            AppMode.WAN_APP, 
+            "https://api.autoxing.com/", 
+            "wss://service.autoxing.com/"
+        );
 
+    ```
+
+=== "Overseas access point"
+
+    ```typescript
+        import { AXRobot, AppMode } from "@autoxing/robot-js-sdk";
+
+        const axRobot = new AXRobot(
+            "<appId>", 
+            "<appSecret>", 
+            AppMode.WAN_APP, 
+            "https://apiglobal.autoxing.com/", 
+            "wss://serviceglobal.autoxing.com/"
+        );
+
+    ```

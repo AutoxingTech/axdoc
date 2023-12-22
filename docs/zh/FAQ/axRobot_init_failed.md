@@ -5,7 +5,17 @@ axRobot 初始化失败
 
 ## 返回值
 ???+ failure "axRobot 初始化失败"
+=== "javascript"
     ```javascript
+    { 
+        errCode: 33000, 
+        errText: 'Initialization failed. Please check app id and app secret.', 
+        robotId: undefined 
+    }
+    ```
+=== "json"
+
+    ```json
     { 
         errCode: 33000, 
         errText: 'Initialization failed. Please check app id and app secret.', 
