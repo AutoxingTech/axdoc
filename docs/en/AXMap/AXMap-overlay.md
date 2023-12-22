@@ -8,7 +8,7 @@ Add points to the map
 
 | Name | Data Type | Description |
 | ------------- | -------- | ---------------- |
-| `coordinates` | number[] | point coordinates [x, y] |
+| `coordinates` | number[] | point coordinates [x, y] Unit: meters|
 | `properties` | object | optional; custom properties |
 
 ### Return value `string`
@@ -37,7 +37,7 @@ Add lines to the map
 
 | Name | Data Type | Description |
 | ------------- | -------- | ---------------- |
-| `coordinates` | array[] | array of point coordinates on the line |
+| `coordinates` | array[] | array of point coordinates on the line Unit: meters|
 | `properties` | object | optional; custom properties |
 
 ### Return value `string`
@@ -65,8 +65,8 @@ Add a marker to the map
 | Name | Data Type | Description |
 | ------------- | -------- | ----------- |
 | `imgSrc` | string | Image address |
-| `coordinates` | number[] | coordinates [x, y] |
-| `yaw` | number | facing angle |
+| `coordinates` | number[] | coordinates [x, y] Unit: meters|
+| `yaw` | number | facing angle Unit: degrees|
 
 ### Return value `any`
 
@@ -89,8 +89,8 @@ Set marker properties
 | Name | Data Type | Description |
 | ------------- | -------- | ------------- |
 | `marker` | any | marker object |
-| `coordinates` | number[] | new coordinates [x, y] |
-| `yaw` | number | new heading angle |
+| `coordinates` | number[] | new coordinates [x, y] Unit: meters|
+| `yaw` | number | new heading angle Unit: degrees|
 
 ### return value
 

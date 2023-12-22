@@ -8,7 +8,7 @@
 
 | 名称          | 数据类型 | 说明             |
 | ------------- | -------- | ---------------- |
-| `coordinates` | number[] | 点坐标 [x, y]    |
+| `coordinates` | number[] | 点坐标 [x, y]  单位:米|
 | `properties`  | object   | 可选；自定义属性 |
 
 ### 返回值 `string`
@@ -37,7 +37,7 @@ axMap.addPoint([0, 0], {
 
 | 名称          | 数据类型 | 说明             |
 | ------------- | -------- | ---------------- |
-| `coordinates` | array[]  | 线上的点坐标数组 |
+| `coordinates` | array[]  | 线上的点坐标数组 单位:米|
 | `properties`  | object   | 可选；自定义属性 |
 
 ### 返回值 `string`
@@ -65,8 +65,8 @@ axMap.addLine([[0, 0], [10, 10], {
 | 名称          | 数据类型 | 说明        |
 | ------------- | -------- | ----------- |
 | `imgSrc`      | string   | 图片地址    |
-| `coordinates` | number[] | 坐标 [x, y] |
-| `yaw`         | number   | 朝向角度    |
+| `coordinates` | number[] | 坐标 [x, y] 单位:米|
+| `yaw`         | number   | 朝向角度    单位:度|
 
 ### 返回值 `any`
 
@@ -89,8 +89,8 @@ const marker = axMap.addMarker("<imgSrc>", [0, 0], 0);
 | 名称          | 数据类型 | 说明          |
 | ------------- | -------- | ------------- |
 | `marker`      | any      | marker 对象   |
-| `coordinates` | number[] | 新坐标 [x, y] |
-| `yaw`         | number   | 新的朝向角度  |
+| `coordinates` | number[] | 新坐标 [x, y] 单位:米|
+| `yaw`         | number   | 新的朝向角度  单位:度|
 
 ### 返回值
 
