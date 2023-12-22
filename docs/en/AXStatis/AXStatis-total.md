@@ -8,7 +8,7 @@ Statistics Total
 
 | Name | Data Type | Description |
 | ------------ | ------ | ------------------ |
-| `statisticsTotal` | [StatisticsTotal](#/Define-StatisticsTotal) |  |
+| `statisticsTotal` | [StatisticsTotal](../../Define/Define-StatisticsTotal) |  |
 
 ### Return value `Promise.<any>`
 

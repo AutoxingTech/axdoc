@@ -8,7 +8,7 @@ Task Statistics
 
 | Name | Data Type | Description |
 | ------------ | ------ | ------------------ |
-| `taskStatistics` | [TaskStatistics](#/Define-TaskStatistics) |  |
+| `taskStatistics` | [TaskStatistics](../../Define/Define-TaskStatistics) |  |
 
 ### Return value `Promise.<any>`
 

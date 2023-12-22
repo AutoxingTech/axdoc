@@ -10,9 +10,9 @@ task node information
 | `x` | number | task node coordinate x component |
 | `y` | number | task node coordinate y component |
 | `yaw` | number | The orientation of the task node; unit: angle |
-| `type` | number | POI type; Reference: [POI Types](#/Define-PoiType) |
+| `type` | number | POI type; Reference: [POI Types](../../Define/Define-PoiType) |
 | `ext` | object | optional; task node custom extension information |
-| `stepActs` | [BaseAction](#/Define-BaseAction)[] | optional; task node action list |
+| `stepActs` | [BaseAction](../../Define/Define-BaseAction)[] | optional; task node action list |
 
 ## Example
 

@@ -8,7 +8,7 @@
 
 | 名称         | 类型   | 说明               |
 | ------------ | ------ | ------------------ |
-| `taskStatistics` | [TaskStatistics](#/Define-TaskStatistics) |  |
+| `taskStatistics` | [TaskStatistics](../../Define/Define-TaskStatistics) |  |
 
 ### 返回值 `Promise.<any>`
 

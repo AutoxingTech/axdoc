@@ -8,7 +8,7 @@ Control the robot back to the charging pile
 
 | Name | Data Type | Description |
 | ------ | --------------------- | ---- |
-| `pose` | [Pose](#/Define-Pose) | pose |
+| `pose` | [Pose](../../Define/Define-Pose) | pose |
 
 ### Return Value `Promise.<boolean>`
 

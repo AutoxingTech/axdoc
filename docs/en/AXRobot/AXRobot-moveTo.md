@@ -8,7 +8,7 @@ The robot moves to the specified position
 
 | Name | Data Type | Description |
 | ------ | --------------------- | ---- |
-| `pose` | [Pose](#/Define-Pose) | pose |
+| `pose` | [Pose](../../Define/Define-Pose) | pose |
 
 ### Return Value
 

@@ -8,7 +8,7 @@
 
 | 名称         | 类型   | 说明               |
 | ------------ | ------ | ------------------ |
-| `singleTaskStatistics` | [SingleTaskStatistics](#/Define-SingleTaskStatistics) |  |
+| `singleTaskStatistics` | [SingleTaskStatistics](../../Define/Define-SingleTaskStatistics) |  |
 
 ### 返回值 `Promise.<any>`
 

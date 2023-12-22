@@ -10,7 +10,7 @@ Turn on the light strip
 
 | Name | Type | Description |
 | ----------- | ------------------------------- | ---- |
-| `lightBelt` | [LightBelt](#/Define-LightBelt) |
+| `lightBelt` | [LightBelt](../../Define/Define-LightBelt) |
 
 ### Return value `Promise.<boolean>`
 
@@ -44,7 +44,7 @@ Turn off the light strip
 
 | Name | Type | Description |
 | ----------- | ------------------------------- | ---- |
-| `lightBelt` | [LightBelt](#/Define-LightBelt) |
+| `lightBelt` | [LightBelt](../../Define/Define-LightBelt) |
 
 ### Return value `Promise.<boolean>`
 

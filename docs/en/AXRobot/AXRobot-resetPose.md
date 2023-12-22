@@ -8,7 +8,7 @@ Reset the robot pose
 
 | Name | Data Type | Description |
 | --------- | --------------------------- | ---- |
-| `mapPose` | [MapPose](#/Define-MapPose) | Pose |
+| `mapPose` | [MapPose](../../Define/Define-MapPose) | Pose |
 | `isChargingPose` | boolean                     | optional; Whether it is the charging pile pose | **The default is the pose of the charging pile** <br> **`false`: the current pose of the robot, `true`: the pose of the charging pile** |
 
 ### Return value `Promise.<boolean>`

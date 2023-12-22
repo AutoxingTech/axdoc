@@ -7,7 +7,7 @@
 
 | 名称   | 数据类型                                | 说明     |
 | ------ | --------------------------------------- | -------- |
-| `type` | [EmergencyType](#/Define-EmergencyType) | 急停方法 |
+| `type` | [EmergencyType](../../Define/Define-EmergencyType) | 急停方法 |
 
 ### 返回值
 

@@ -8,7 +8,7 @@
 
 | 名称  | 数据类型                              | 说明     |
 | ----- | ------------------------------------- | -------- |
-| `req` | [RequestParam](#/Define-RequestParam) | 请求参数 |
+| `req` | [RequestParam](../../Define/Define-RequestParam) | 请求参数 |
 
 ### 返回值 `Promise.<any>`
 

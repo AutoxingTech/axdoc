@@ -6,5 +6,5 @@ Task node action information
 
 | Name | Data Type | Description |
 | ------ | --------------------------------- | -------- |
-| `type` | [ActionType](#/Define-ActionType) | Action Type |
+| `type` | [ActionType](../../Define/Define-ActionType) | Action Type |
 | `data` | object | action parameters |

@@ -8,7 +8,7 @@
 
 | 名称         | 类型   | 说明               |
 | ------------ | ------ | ------------------ |
-| `statisticsTotal` | [StatisticsTotal](#/Define-StatisticsTotal) |  |
+| `statisticsTotal` | [StatisticsTotal](../../Define/Define-StatisticsTotal) |  |
 
 ### 返回值 `Promise.<any>`
 

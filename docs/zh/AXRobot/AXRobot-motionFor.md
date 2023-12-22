@@ -8,7 +8,7 @@
 
 | 名称   | 数据类型                          | 说明     |
 | ------ | --------------------------------- | -------- |
-| `type` | [MotionType](#/Define-MotionType) | 运动方式 |
+| `type` | [MotionType](../../Define/Define-MotionType) | 运动方式 |
 
 ### 返回值
 

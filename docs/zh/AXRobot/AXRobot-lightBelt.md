@@ -10,7 +10,7 @@
 
 | 名称        | 类型                            | 说明 |
 | ----------- | ------------------------------- | ---- |
-| `lightBelt` | [LightBelt](#/Define-LightBelt) | 档位 |
+| `lightBelt` | [LightBelt](../../Define/Define-LightBelt) | 档位 |
 
 ### 返回值 `Promise.<boolean>`
 
@@ -43,7 +43,7 @@ const success = await axRobot.openLightBelt(lightBelt);
 
 | 名称        | 类型                            | 说明 |
 | ----------- | ------------------------------- | ---- |
-| `lightBelt` | [LightBelt](#/Define-LightBelt) | 档位 |
+| `lightBelt` | [LightBelt](../../Define/Define-LightBelt) | 档位 |
 ### 返回值 `Promise.<boolean>`
 
 是否成功

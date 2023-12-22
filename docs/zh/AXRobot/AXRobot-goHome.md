@@ -8,7 +8,7 @@
 
 | 名称   | 数据类型              | 说明 |
 | ------ | --------------------- | ---- |
-| `pose` | [Pose](#/Define-Pose) | 位姿 |
+| `pose` | [Pose](../../Define/Define-Pose) | 位姿 |
 
 	### 返回值 `Promise.<boolean>`
 

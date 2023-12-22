@@ -8,7 +8,7 @@ Single Task Statistics
 
 | Name | Type | Description |
 | ------------ | ------ | ------------------ |
-| `singleTaskStatistics` | [SingleTaskStatistics](#/Define-SingleTaskStatistics) |  |
+| `singleTaskStatistics` | [SingleTaskStatistics](../../Define/Define-SingleTaskStatistics) |  |
 
 ### Return value `Promise.<any>`
 

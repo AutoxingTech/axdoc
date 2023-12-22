@@ -10,7 +10,7 @@
 
 | 名称   | 类型                          | 说明     |
 | ------ | ----------------------------- | -------- |
-| `task` | [TaskInfo](#/Define-TaskInfo) | 任务信息 |
+| `task` | [TaskInfo](../../Define/Define-TaskInfo) | 任务信息 |
 
 ### 返回值 `Promise.<boolean>`
 

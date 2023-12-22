@@ -8,7 +8,7 @@ Set service information for robot connection
 
 | Name  | Data Type | Description |
 | ------------ | --------------------------------- | ---------- |
-| `serverInfo` | [ServerInfo](#/Define-ServerInfo) | Server Info |
+| `serverInfo` | [ServerInfo](../../Define/Define-ServerInfo) | Server Info |
 
 ### Return value `Promise.<boolean>`
 

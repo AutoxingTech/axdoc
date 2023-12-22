@@ -7,7 +7,7 @@ Turn off the light strip action parameter
 | Name | Data Type | Description |
 | -------- | --------------------------------- | ---------------------------------------------- |
 | `mode` | number | execution mode;<br/>1 - host computer execution<br/>2 - chassis execution |
-| `indexs` | [LightIndex](#/Define-LightIndex) | Optional; segment display, currently supports up to 4 segments |
+| `indexs` | [LightIndex](../../Define-LightIndex) | Optional; segment display, currently supports up to 4 segments |
 
 ## Example
 
