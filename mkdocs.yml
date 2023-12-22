@@ -1,9 +1,9 @@
 site_name: AXSDK
 
-repo_url: https://github.com/yonoka/yonoka.github.io
-repo_name: yonoka/yonoka.github.io
+repo_url: https://github.com/AutoxingTech/axdoc
+repo_name: AutoxingTech/axdoc
 
-site_url: 'https://yonoka.github.io/'
+site_url: 'https://AutoxingTech.github.io/axdoc'
 
 theme:
   name: material
