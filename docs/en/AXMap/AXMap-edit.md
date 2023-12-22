@@ -70,7 +70,7 @@ Set the current point pose
 
 | Name | Data Type | Description |
 | -------------- | ------------- | ---------------- |
-| `coordinates` | array<number> | coordinates [x, y] |
+| `coordinates` | array<number> | coordinates [x, y] Unit: meters|
 | `properties` | object | optional; custom properties |
 
 ### Return Value

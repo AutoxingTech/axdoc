@@ -70,7 +70,7 @@ axMap.deleteFeature("<featureId>");
 
 | 名称           | 数据类型      | 说明             |
 | -------------- | ------------- | ---------------- |
-| `coordinates` | array<number> | 坐标 [x, y]      |
+| `coordinates` | array<number> | 坐标 [x, y]    单位:米  |
 | `properties`   | object        | 可选；自定义属性 |
 
 ### 返回值

@@ -30,7 +30,7 @@ axMap.setAreaMap("<areaId>");
 
 | 名称          | 数据类型      | 说明              |
 | ------------- | ------------- | ----------------- |
-| `coordinates` | array<number> | 中心点坐标 [x, y] |
+| `coordinates` | array<number> | 中心点坐标 [x, y] 单位:米|
 
 ### 返回值
 
@@ -74,7 +74,7 @@ axMap.zoomTo(10);
 
 | 名称          | 数据类型      | 说明              |
 | ------------- | ------------- | ----------------- |
-| `coordinates` | array<number> | 目标点坐标 [x, y] |
+| `coordinates` | array<number> | 目标点坐标 [x, y] 单位:米|
 
 ### 返回值
 

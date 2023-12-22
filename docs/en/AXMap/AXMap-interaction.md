@@ -30,7 +30,7 @@ Set the map center point
 
 | Name | Data Type | Description |
 | ------------- | ------------- | ----------------- |
-| `coordinates` | array<number> | center point coordinates [x, y] |
+| `coordinates` | array<number> | center point coordinates [x, y] Unit: meters|
 
 ### Return Value
 
@@ -74,7 +74,7 @@ map fly to a point
 
 | Name | Data Type | Description |
 | ------------- | ------------- | ----------------- |
-| `coordinates` | array<number> | target point coordinates [x, y] |
+| `coordinates` | array<number> | target point coordinates [x, y] Unit: meters|
 
 ### Return Value
 

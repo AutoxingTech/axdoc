@@ -33,7 +33,7 @@ Convert map coordinates to pixel offsets
 
 | Name | Data Type | Description |
 | ------------- | ------------- | --------------- |
-| `coordinates` | array<number> | map coordinates [x, y] |
+| `coordinates` | array<number> | map coordinates [x, y] Unit: meters|
 
 ### Return Value `array.<number>`
 

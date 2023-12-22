@@ -33,7 +33,7 @@ const newImg = await axMap.beautifyMapImg("<imgUrl>", {...}, {...}, {...});
 
 | 名称          | 数据类型      | 说明            |
 | ------------- | ------------- | --------------- |
-| `coordinates` | array<number> | 地图坐标 [x, y] |
+| `coordinates` | array<number> | 地图坐标 [x, y] 单位:米 |
 
 ### 返回值 `array.<number>`
 
