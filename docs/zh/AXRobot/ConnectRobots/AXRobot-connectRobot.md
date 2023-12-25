@@ -8,7 +8,7 @@
 
 | 名称  | 数据类型   | 说明     |
 | ----- | ---------- | -------- |
-| `req` | ReqConnect | 连接参数 |
+| `req` | [ReqConnect](#reqconnect) | 连接参数 |
 
 ### 返回值 `Promise`
 
@@ -31,3 +31,41 @@ try {
 }
 ```
 
+## ReqConnect  
+
+
+```typescript
+// 初始化机器人操作实例
+...
+ReqConnect {
+    robotId?: string,
+    robotIp?: string,
+    timeOut?: number
+}
+```
+
+### 示例
+
+```typescript
+// 初始化机器人操作实例
+...
+this.axRobot = new AXRobot(
+    "<appId>", 
+    "<appSecret>",
+    AppMode.LAN_APP) // dev
+
+try {
+    let isOk = await this.axRobot.init()
+    //console.log(isOk)
+    if (isOk === true) {
+        let res = await this.axRobot.connectRobot({
+            robotId: '81822013000931v', // 机器人sn
+            robotIp: '192.168.12.1' // 
+        })
+    }
+} catch (e) {
+    console.log(e)
+}
+
+
+```

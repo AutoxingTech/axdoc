@@ -8,7 +8,7 @@ Connect the robot
 
 | Name | Data Type | Description |
 | ----- | ---------- | -------- |
-| `req` | ReqConnect | connection parameters |
+| `req` | [ReqConnect](#reqconnect) | connection parameters |
 
 ### Return value `Promise`
 
@@ -29,4 +29,42 @@ try {
 } catch(err) {
    console.log(err.errText);
 }
+```
+
+## ReqConnect  
+
+
+```typescript
+...
+ReqConnect {
+    robotId?: string,
+    robotIp?: string,
+    timeOut?: number
+}
+```
+
+### Example
+
+```typescript
+// Initialize robot operation instance
+...
+this.axRobot = new AXRobot(
+    "<appId>", 
+    "<appSecret>",
+    AppMode.LAN_APP) 
+
+try {
+    let isOk = await this.axRobot.init()
+    //console.log(isOk)
+    if (isOk === true) {
+        let res = await this.axRobot.connectRobot({
+            robotId: '81822013000931v', // Robot SN
+            robotIp: '192.168.12.1' // 
+        })
+    }
+} catch (e) {
+    console.log(e)
+}
+
+
 ```
