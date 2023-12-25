@@ -10,7 +10,7 @@ Subscribe to task status.
 
 | Name | Type | Description |
 | ---------- | ----------------------------------------- | ------------ |
-| `listener` | [OnTaskListener](../../Define/Define-OnTaskListener) | task status callback |
+| `listener` | [OnTaskListener](../../../Define/Define-OnTaskListener) | task status callback |
 
 ### Return value `void`
 

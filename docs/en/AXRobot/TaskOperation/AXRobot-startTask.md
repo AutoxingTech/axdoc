@@ -10,7 +10,7 @@ Start the task.
 
 | Name | Type | Description |
 | ------ | ----------------------------- | -------- |
-| `task` | [TaskInfo](../../Define/Define-TaskInfo) | task info |
+| `task` | [TaskInfo](../../../Define/Define-TaskInfo) | task info |
 
 ### Return value `Promise.<boolean>`
 
