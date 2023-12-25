@@ -8,7 +8,7 @@ Robot motion control
 
 | Name | Data Type | Description |
 | ------ | --------------------------------- | -------- |
-| `type` | [MotionType](../../Define/Define-MotionType) | motion type |
+| `type` | [MotionType](../../../Define/Define-MotionType) | motion type |
 
 ### Return Value
 

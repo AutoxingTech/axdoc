@@ -8,7 +8,7 @@ Get site list
 
 | Name | Data Type | Description |
 | ----- | ------------------------------------- | -------- |
-| `req` | ​​[RequestParam](../../Define/Define-RequestParam) | Request parameters |
+| `req` | ​​[RequestParam](../../../Define/Define-RequestParam) | Request parameters |
 
 ### Return value `Promise.<any>`
 

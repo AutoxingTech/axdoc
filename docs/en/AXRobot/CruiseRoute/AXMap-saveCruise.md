@@ -8,7 +8,7 @@ Setting/Update Cruise Route
 
 | Name         | Data Type                         | Description  |
 | ------------ | --------------------------------- | ------------ |
-| `cruiseInfo` | [CruiseInfo](../../Define/Define-CruiseInfo) | Cruise Route Information |
+| `cruiseInfo` | [CruiseInfo](../../../Define/Define-CruiseInfo) | Cruise Route Information |
 
 ### Return value `Promise.<boolean>`
 

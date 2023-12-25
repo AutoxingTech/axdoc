@@ -8,7 +8,7 @@ Subscribe to bot real-time status
 
 | Name | Data Type | Description |
 | ---------- | ------------------------------------------ | ---------------------- |
-| `listener` | [OnRobotListner](../../Define/Define-OnRobotListener) | Robot real-time status subscription callback |
+| `listener` | [OnRobotListner](../../../Define/Define-OnRobotListener) | Robot real-time status subscription callback |
 
 ### Return Value
 

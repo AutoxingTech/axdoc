@@ -7,7 +7,7 @@ Set the robot to enter the emergency stop state
 
 | Name | Data Type | Description |
 | ------ | --------------------------------------- | -------- |
-| `type` | [EmergencyType](../../Define/Define-EmergencyType) | Emergency stop method |
+| `type` | [EmergencyType](../../../Define/Define-EmergencyType) | Emergency stop method |
 
 ### Return Value
 

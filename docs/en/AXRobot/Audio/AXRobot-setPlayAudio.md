@@ -8,7 +8,7 @@ Set Play Audio
 
 | Name  | Data Type | Description |
 | ------ | ------ | ------------------------ |
-| `playAudio` | [PlayAudio](../../Define/Define-PlayAudio) | Play Audio |
+| `playAudio` | [PlayAudio](../../../Define/Define-PlayAudio) | Play Audio |
 
 ### Return value `Promise.<boolean>`
 
