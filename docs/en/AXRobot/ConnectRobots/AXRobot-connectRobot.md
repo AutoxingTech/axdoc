@@ -58,7 +58,7 @@ try {
     //console.log(isOk)
     if (isOk === true) {
         let res = await this.axRobot.connectRobot({
-            robotId: '81822013000931v', // Robot SN
+            robotId: '8182201xxxx', // Robot SN
             robotIp: '192.168.12.1' // 
         })
     }
