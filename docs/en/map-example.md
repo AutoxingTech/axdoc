@@ -27,4 +27,4 @@ axMap.setAreaMap("<areaId>"); // areaId is the map area identifier
 // do something with map
 ```
 
-[example](../example/#/showmap)
+[example](https://service.autoxing.com/sdk/v1.0/example/#/showmap)

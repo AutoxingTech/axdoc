@@ -33,4 +33,4 @@ if (successed) {
 > * **AppMode** - [AppMode](../Define/Define-AppMode)
 
 
-[example](../example/#/)
+[example](https://service.autoxing.com/sdk/v1.0/example/#/)

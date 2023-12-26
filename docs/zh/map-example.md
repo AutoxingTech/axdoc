@@ -27,4 +27,4 @@ axMap.setAreaMap("<areaId>");  // areaId 为地图区域标识
 // do something with map
 ```
 
-[示例](https://service.autoxing.com/sdk/v1.0/example/#/)
+[示例](https://service.autoxing.com/sdk/v1.0/example/#/showmap)
