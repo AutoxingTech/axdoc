@@ -16,6 +16,9 @@ Create a task.
 
 taskID
 
+???+ WARNING "WARNING"
+    Task created successfully. Please note that the task has not started executing at this time.
+
 ### Example
 
 ???+ Example "Example"

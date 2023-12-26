@@ -14,7 +14,8 @@ Constructor
 | `serverUrl` | string   | serverUrl: <br>Mainland access point:"https://api.autoxing.com/"<br>Overseas access point:"https://apiglobal.autoxing.com/"<br> |
 | `websocketUrl` | string   | websocketUrl:<br>Mainland access point:"wss://service.autoxing.com/"<br>Overseas access point:"wss://serviceglobal.autoxing.com/" |
 
-
+???+ warning "warning"
+    Please select the relevant access point for your business
 
 
 ### Return Value
