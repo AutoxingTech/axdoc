@@ -16,20 +16,21 @@
 
 ### 示例
 
-```typescript
-// 初始化机器人操作实例
-...
-try {
-  const res = await axRobot.connectRobot({
-    robotId: "<robotId>"
-  });
-  
-  console.log("connect success: " + res.robotId);
-  // do something
-} catch(err) {
-  console.log(err.errText);
-}
-```
+???+ Example "connectRobot" 
+    ```typescript
+    // 初始化机器人操作实例
+    ...
+    try {
+    const res = await axRobot.connectRobot({
+        robotId: "<robotId>"
+    });
+    
+    console.log("connect success: " + res.robotId);
+    // do something
+    } catch(err) {
+    console.log(err.errText);
+    }
+    ```
 
 ## ReqConnect  
 
@@ -45,27 +46,27 @@ ReqConnect {
 ```
 
 ### 示例
+???+ Example "ReqConnect"
+    ```typescript
+    // 初始化机器人操作实例
+    ...
+    this.axRobot = new AXRobot(
+        "<appId>", 
+        "<appSecret>",
+        AppMode.LAN_APP) // dev
 
-```typescript
-// 初始化机器人操作实例
-...
-this.axRobot = new AXRobot(
-    "<appId>", 
-    "<appSecret>",
-    AppMode.LAN_APP) // dev
-
-try {
-    let isOk = await this.axRobot.init()
-    //console.log(isOk)
-    if (isOk === true) {
-        let res = await this.axRobot.connectRobot({
-            robotId: '81822013xxxx', // 机器人sn
-            robotIp: '192.168.12.1' // 
-        })
+    try {
+        let isOk = await this.axRobot.init()
+        //console.log(isOk)
+        if (isOk === true) {
+            let res = await this.axRobot.connectRobot({
+                robotId: '81822013xxxx', // 机器人sn
+                robotIp: '192.168.12.1' // 
+            })
+        }
+    } catch (e) {
+        console.log(e)
     }
-} catch (e) {
-    console.log(e)
-}
 
 
-```
+    ```

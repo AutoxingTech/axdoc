@@ -15,21 +15,21 @@ Connect the robot
 none
 
 ### Example
+???+ Example "connectRobot"
+    ``` javascript
+    // Initialize the robot operation instance
+    ...
+    try {
+    const res = await axRobot.connectRobot({
+        robotId: "<robotId>"
+    });
 
-``` javascript
-// Initialize the robot operation instance
-...
-try {
-   const res = await axRobot.connectRobot({
-     robotId: "<robotId>"
-   });
-
-   console.log("connect success: " + res.robotId);
-   // do something
-} catch(err) {
-   console.log(err.errText);
-}
-```
+    console.log("connect success: " + res.robotId);
+    // do something
+    } catch(err) {
+    console.log(err.errText);
+    }
+    ```
 
 ## ReqConnect  
 
@@ -44,27 +44,27 @@ ReqConnect {
 ```
 
 ### Example
+???+ Example "ReqConnect"
+    ```typescript
+    // Initialize robot operation instance
+    ...
+    this.axRobot = new AXRobot(
+        "<appId>", 
+        "<appSecret>",
+        AppMode.LAN_APP) 
 
-```typescript
-// Initialize robot operation instance
-...
-this.axRobot = new AXRobot(
-    "<appId>", 
-    "<appSecret>",
-    AppMode.LAN_APP) 
-
-try {
-    let isOk = await this.axRobot.init()
-    //console.log(isOk)
-    if (isOk === true) {
-        let res = await this.axRobot.connectRobot({
-            robotId: '8182201xxxx', // Robot SN
-            robotIp: '192.168.12.1' // 
-        })
+    try {
+        let isOk = await this.axRobot.init()
+        //console.log(isOk)
+        if (isOk === true) {
+            let res = await this.axRobot.connectRobot({
+                robotId: '8182201xxxx', // Robot SN
+                robotIp: '192.168.12.1' // 
+            })
+        }
+    } catch (e) {
+        console.log(e)
     }
-} catch (e) {
-    console.log(e)
-}
 
 
-```
+    ```
