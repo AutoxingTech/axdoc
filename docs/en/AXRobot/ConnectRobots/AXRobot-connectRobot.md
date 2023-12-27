@@ -16,6 +16,7 @@ none
 
 ### Example
 ???+ Example "connectRobot"
+
     ``` javascript
     // Initialize the robot operation instance
     ...
@@ -45,26 +46,106 @@ ReqConnect {
 
 ### Example
 ???+ Example "ReqConnect"
-    ```typescript
-    // Initialize robot operation instance
-    ...
-    this.axRobot = new AXRobot(
-        "<appId>", 
-        "<appSecret>",
-        AppMode.LAN_APP) 
+    === "AppMode.WAN_APP"
+        ???+ note 
+            The robot connects to the internet via 4G or wifi. `robotId` is a required field.
 
-    try {
-        let isOk = await this.axRobot.init()
-        //console.log(isOk)
-        if (isOk === true) {
-            let res = await this.axRobot.connectRobot({
-                robotId: '8182201xxxx', // Robot SN
-                robotIp: '192.168.12.1' // 
-            })
+
+        ```typescript
+        // Initialize robot operation instance
+        ...
+        this.axRobot = new AXRobot(
+            "<appId>", 
+            "<appSecret>",
+            AppMode.WAN_APP) // dev
+
+        try {
+            let isOk = await this.axRobot.init()
+            //console.log(isOk)
+            if (isOk === true) {
+                let res = await this.axRobot.connectRobot({
+                    robotId: '81822013xxxx', // Robot SN
+                })
+            }
+        } catch (e) {
+            console.log(e)
         }
-    } catch (e) {
-        console.log(e)
-    }
 
 
-    ```
+        ```
+
+
+    === "AppMode.LOCAL_APP"
+        ???+ note 
+            The upper computer connects to the robot chassis via a wired connection.
+
+        ```typescript
+        // Initialize robot operation instance
+        ...
+        this.axRobot = new AXRobot(
+            "<appId>", 
+            "<appSecret>",
+            AppMode.LOCAL_APP) // dev
+
+        try {
+            let isOk = await this.axRobot.init()
+            //console.log(isOk)
+            if (isOk === true) {
+                let res = await this.axRobot.connectRobot({})
+            }
+        } catch (e) {
+            console.log(e)
+        }
+
+
+        ```
+
+
+    === "AppMode.LAN_APP"
+        ???+ note 
+            Connect to the robot via the robot chassis WiFi AP.
+
+        ```typescript
+        // Initialize robot operation instance
+        ...
+        this.axRobot = new AXRobot(
+            "<appId>", 
+            "<appSecret>",
+            AppMode.LAN_APP) // dev
+
+        try {
+            let isOk = await this.axRobot.init()
+            //console.log(isOk)
+            if (isOk === true) {
+                let res = await this.axRobot.connectRobot({})
+            }
+        } catch (e) {
+            console.log(e)
+        }
+
+
+        ```
+
+        ???+ note 
+            The robot chassis connects to the local network. Replace with the actual IP of the robot chassis on the local network.
+
+        ```typescript
+        // Initialize robot operation instance
+        ...
+        this.axRobot = new AXRobot(
+            "<appId>", 
+            "<appSecret>",
+            AppMode.LAN_APP) // dev
+
+        try {
+            let isOk = await this.axRobot.init()
+            //console.log(isOk)
+            if (isOk === true) {
+                let res = await this.axRobot.connectRobot({
+                    robotIp: '192.168.0.122' // Actual IP on the local network
+                })
+            }
+        } catch (e) {
+            console.log(e)
+        }
+        ```
