@@ -10,4 +10,4 @@ map pose
 
 ## Inherited From
 
-[Pose](#Define-Pose)
+[Pose](../Define-Pose)
