@@ -12,7 +12,7 @@
 | `taskType` | number                            | 任务类型<br/>0 - 消杀<br/>1 - 回桩充电<br/>2 - 餐厅          |
 | `runType`  | number                            | 运行类型<br/>0 - 定时消杀<br/>1 - 临时消杀<br/>20 - 快捷送餐<br/>21 - 多点送餐<br/>22 - 引领<br/>23 - 巡游<br/>24 - 返航<br/>25 - 充电桩 |
 | `curPt`    | [TaskPoint](../../Define/Define-TaskPoint)   | 机器人当前位置                                               |
-| `taskPts`  | [TaskPoint](../../Define/Define-TaskPoint)[] | 任务节点列表                                                 |
+| `pts`  | [TaskPoint](../../Define/Define-TaskPoint)[] | 任务节点列表                                                 |
 | `backPt`   | [TaskPoint](../../Define/Define-TaskPoint)   | 可选；任务结束后返回的节点                                   |
 
 
