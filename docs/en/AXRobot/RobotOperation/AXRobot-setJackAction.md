@@ -1,4 +1,4 @@
-﻿# setJackAction
+﻿# Set JackAction
 
 ## `setJackAction(type) -> {Promise.<boolean>}`
 
@@ -6,9 +6,9 @@ Set the lifting and lowering actions of the robot
 
 ### Parameters
 
-| Name  | Data Type | Description                |
-| ---------- |--------|----------------------------|
-| `type`     | number | type: 0 jacking 1  go down |
+| Name  | Data Type | Description                    |
+| ---------- |--------|--------------------------------|
+| `type`     | number | type: <br>  0 up <br>  1  down |
 
 ### Return value `Promise.<boolean>`
 
@@ -18,9 +18,9 @@ whether succeed
 - false - fail
 
 ### Example
-
-```javascript
-...
-const success = await axRobot.setJackAction(0);
-...
-```
+!!! note "Example"
+    ```javascript
+    ...
+    const success = await axRobot.setJackAction(0);
+    ...
+    ```
