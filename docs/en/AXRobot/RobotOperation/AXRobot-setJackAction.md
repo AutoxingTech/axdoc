@@ -1,10 +1,10 @@
-﻿# 设置顶升动作
+﻿# setJackAction
 
 ## `setJackAction(type) -> {Promise.<boolean>}`
 
 Set the lifting and lowering actions of the robot
 
-### 参数
+### Parameters
 
 | Name  | Data Type | Description                |
 | ---------- |--------|----------------------------|
