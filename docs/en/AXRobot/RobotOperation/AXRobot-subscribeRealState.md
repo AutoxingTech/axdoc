@@ -37,7 +37,8 @@ axRobot.subscribeRealState({
     console.log(state.errors); // fault code
     console.log(state.isGoHome); // Whether it is returning to the pile for charging
     console.log(state.timestamp); // timestamp of robot state
-
+    console.log(state.duration); // Duration unit:s
+    console.log(state.mileage); // Mileage unit:m
     // do something
   }
 });
