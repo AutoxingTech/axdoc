@@ -37,8 +37,6 @@ axRobot.subscribeRealState({
     console.log(state.errors); // 故障码
     console.log(state.isGoHome); // 是否正在回桩充电中
     console.log(state.timestamp); // 机器人状态的时间戳
-    console.log(state.duration); // 时长 单位:秒
-    console.log(state.mileage); // 实时里程 单位:米
     // do something
   }
 });
