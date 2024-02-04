@@ -1,4 +1,4 @@
-﻿# getRobotFootprint
+﻿# Get Robot Footprint
 
 ## `getRobotFootprint() -> {Promise.<any>}`
 

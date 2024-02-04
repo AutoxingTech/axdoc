@@ -1,4 +1,4 @@
-﻿# saveRobotFootprint
+﻿# Set Robot Footprint
 
 ## `saveRobotFootprint(footprintInfo) -> {Promise.<boolean>}`
 
