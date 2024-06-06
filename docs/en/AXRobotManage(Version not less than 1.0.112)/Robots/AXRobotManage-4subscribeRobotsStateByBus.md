@@ -10,8 +10,6 @@ Real time status of all robots under subscription services and maps. If the stat
 
 | Fields         | Type           | Description            |
 | ------------------ | ------------------------------------------------ | -------- |
-| `businessId`       | string |  businessId |
-| `areaId`           | string |  areaId |
 | `listener`         | Object |  listener |
 
 
@@ -19,7 +17,7 @@ Real time status of all robots under subscription services and maps. If the stat
 
 ```javascript
 ...
-await axRobot.subscribeRobotsStateByBus(businessId, areaId, {
+await axRobot.subscribeRobotsStateByBus({
 	onRobotListStatusChanged: state => {
 		console.log(state.isManualMode); 
 		console.log(state.isTasking);

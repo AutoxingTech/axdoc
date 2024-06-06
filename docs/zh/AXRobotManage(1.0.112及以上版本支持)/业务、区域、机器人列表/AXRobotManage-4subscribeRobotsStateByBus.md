@@ -10,8 +10,6 @@
 
 | 名称               | 类型                                                        | 说明     |
 | ------------------ | ------------------------------------------------ | -------- |
-| `businessId`       | string |  业务标识 |
-| `areaId`           | string |  区域标识 |
 | `listener`         | Object |  机器人实时状态订阅回调 |
 
 
@@ -19,7 +17,7 @@
 
 ```javascript
 ...
-await axRobot.subscribeRobotsStateByBus(businessId, areaId, {
+await axRobot.subscribeRobotsStateByBus({
 	onRobotListStatusChanged: state => {
 		console.log(state.isManualMode); // 是否推动模式
 		console.log(state.isTasking); // 是否正在执行任务
