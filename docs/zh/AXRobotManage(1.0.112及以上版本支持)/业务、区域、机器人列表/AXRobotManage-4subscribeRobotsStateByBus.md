@@ -2,7 +2,7 @@
 
 ## 方法
 
-## `subscribeRobotsStateByBus(businessId, areaId, listener) -> {void}`
+## `subscribeRobotsStateByBus(listener) -> {void}`
 
 订阅业务下、地图下 所有机器人实时状态，如果机器人状态变化，会逐条返回某个机器人实时状态。
 

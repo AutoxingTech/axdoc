@@ -2,7 +2,7 @@
 
 ## Method
 
-## `subscribeRobotsStateByBus(businessId, areaId, listener) -> {void}`
+## `subscribeRobotsStateByBus(listener) -> {void}`
 
 Real time status of all robots under subscription services and maps. If the status of a robot changes, it will return the real-time status of a certain robot one by one.
 
