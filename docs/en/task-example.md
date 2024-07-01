@@ -135,7 +135,7 @@ To point C ：
 ```
 
 AMR：
-Up at point A：
+Up at point A（Require point A type to be a shelf point）：
 ```typescript
 	const task3 = {
 		"name": "<taskName>",
@@ -167,7 +167,7 @@ Up at point A：
 	}
 	const success = axRobot.startTask(task3)
 ```
-Down at point A：
+Down at point A（Require point A type to be a shelf point）：
 ```typescript
 	const task3 = {
 		"name": "<taskName>",

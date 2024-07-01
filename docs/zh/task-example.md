@@ -135,7 +135,7 @@
 ```
 
 操作顶升：
-到点A举起顶升：
+到点A举起顶升（要求点A类型必须是货架点）：
 ```typescript
 	const task3 = {
 		"name": "<taskName>",
@@ -167,7 +167,7 @@
 	}
 	const success = axRobot.startTask(task3)
 ```
-到点A放下顶升：
+到点A放下顶升（要求点A类型必须是货架点）：
 ```typescript
 	const task3 = {
 		"name": "<taskName>",
