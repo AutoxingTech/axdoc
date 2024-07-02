@@ -1,5 +1,5 @@
-| Fault Code | Status                        | Troubleshooting Method                                                 |
-|------------|-------------------------------|------------------------------------------------------------------------|
+| Fault Code | Status                        | Troubleshooting Method                                                 
+|------------|-------------------------------|------------------------------------------------------------------------
 | 0002       | Failed to fetch map           | Restart the robot or restart the chassis service.                      |
 | 0003       | Starting point outside map    | Adjust the starting point position on the mapping platform to ensure it is within the map. |
 | 0004       | Endpoint outside map          | Adjust the endpoint position on the mapping platform to ensure it is within the map. |
