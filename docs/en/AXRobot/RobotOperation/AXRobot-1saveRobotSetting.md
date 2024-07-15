@@ -1,43 +1,43 @@
-﻿# 保存机器人设置
+﻿# saveRobotSetting
 
 ## `saveRobotSetting(setting: any) -> {Promise.<boolean>}`
 
-保存机器人设置
+saveRobotSetting
 
 
-### 请求参数 `setting` 对象
+### Request parameters `setting` Object
 
 settings
 
-| 设置项      |         字段         |        类型      | 说明                     |
+| name      |         filed         | type      | explain                     |
 | ---------- | -------------------- | ---------------- | ------------------------ |
-| settings   |          设置        |   settingsData  |     如下（settingsData）：           |
+| settings   |          设置        |   settingsData  |      follows（settingsData）：           |
 
-settingsData 是一个JSON对象，没有严格验证设置对象的格式，但是下面几个设置需要符合以下格式：
+settingsData is a JSON object without strict validation of the object's format, but the following settings need to conform to the following format:
 
-| 设置项      |         字段         | 类型      | 说明                     |
+| name      |         filed         | type      | explain                     |
 | ---------- | -------------------- | --------- | ------------------------ |
-| 速度        | delivery.runSpeed    | number    | 速度，单位：mm/s         |
-| 行驶模式    | runMode              | number    | 1：灵活避障行驶; 2： 沿轨道行驶;3： 严格沿轨道行驶 |
-| 默认返航点  | basic.standby        | string    |                               |
-| 默认充电桩  | basic.char           | string    |                          |
-| 音量        | sound.avoidVolume    | number    | 0-10（0% - 100%）        |
-| 楼层定位    | pad.foolorId         | string    |                          |
-| 跳点时长    |skipPtDelay           | number    | 跳点时长，单位：s            |
+| runSpeed        | delivery.runSpeed    | number    |runSpeed，mm/s         |
+| runMode    | runMode              | number    | 1: Flexible obstacle avoidance driving; 2: Traveling along the track; 3: Strictly travel along the track|
+| standby  | basic.standby        | string    |                               |
+| char  | basic.char           | string    |                          |
+| avoidVolume        | sound.avoidVolume    | number    | 0-10（0% - 100%）        |
+| foolorId    | pad.foolorId         | string    |                          |
+| skipPtDelay    |skipPtDelay           | number    | skipPtDelay：s            |
 
 
-### 返回值 `Promise.<boolean>`
+### Return value `Promise.<boolean>`
 
-是否成功
+Is it successful
 
-- true - 成功
-- false - 失败
+- true - true
+- false - false
 
-### 提示
+### Tips
 
-提交机器人设置时先获取机器人设置，然后修改自己需要修改的设置内容，其它设置数据保留，然后再提交。
+When submitting robot settings, first obtain the robot settings, then modify the settings you need to modify, keep other settings data, and then submit.
 
-### 示例
+### Example
 
 ```typescript
 ...
@@ -228,7 +228,7 @@ const settings = {
 
 }
 const saveResult = await axRobot.saveRobotSetting(setting);
-console.log(saveResult); // 操作结果
+console.log(saveResult); // saveResult
 ...
 ```
 
