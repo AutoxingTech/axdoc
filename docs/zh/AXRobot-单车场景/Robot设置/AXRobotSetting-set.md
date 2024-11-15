@@ -6,7 +6,7 @@
 
 | Name | Data Type | Description |
 | ------ | --------------------------------- | -------- |
-| `settingsData` | [SettingsData](../../../Define/Define-SettingsData) | motion type |
+| `settingsData` | [SettingsData](../../../Define/Define-SettingsData) | 机器人设置数据 |
 
 ### 返回值 `Promise.<boolean>`
 

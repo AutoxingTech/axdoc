@@ -8,7 +8,7 @@ Get robot custom settings
 
 | Name | Data Type | Description |
 | ------ | --------------------------------- | -------- |
-| `settingsData` | [SettingsData](../../../Define/Define-SettingsData) | motion type |
+| `settingsData` | [SettingsData](../../../Define/Define-SettingsData) | robot settingsData |
 
 ### example
 

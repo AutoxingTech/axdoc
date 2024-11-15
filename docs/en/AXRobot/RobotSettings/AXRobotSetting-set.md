@@ -6,7 +6,7 @@
 
 | Name | Data Type | Description |
 | ------ | --------------------------------- | -------- |
-| `settingsData` | [SettingsData](../../../Define/Define-SettingsData) | motion type |
+| `settingsData` | [SettingsData](../../../Define/Define-SettingsData) | robot settingsData |
 
 ### response `Promise.<boolean>`
 
