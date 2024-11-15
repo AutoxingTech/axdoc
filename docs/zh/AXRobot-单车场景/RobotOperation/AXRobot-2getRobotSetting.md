@@ -1,4 +1,6 @@
-﻿# 获取机器人设置
+﻿# 获取机器人设置(过时)
+
+(不建议了，建议使用[getRobotCustomSettings](../RobotCustomSettings/AXRobotSetting-get.md))
 
 ## `getRobotSetting() -> {Promise.<any>}`
 

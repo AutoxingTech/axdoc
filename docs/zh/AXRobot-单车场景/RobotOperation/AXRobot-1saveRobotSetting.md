@@ -1,4 +1,6 @@
-﻿# 保存机器人设置
+﻿# 保存机器人设置(过时)
+
+(不建议了，建议使用[setCustomSettings](../RobotCustomSettings/AXRobotSetting-set.md))
 
 ## `saveRobotSetting(setting: any) -> {Promise.<boolean>}`
 
