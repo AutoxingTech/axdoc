@@ -12,8 +12,8 @@
 
 Set Result
 
-* `true` - 成功
-* `fales` - 失败
+* `true` - success
+* `fales` - failed
 
 ### example
 

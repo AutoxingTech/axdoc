@@ -1,4 +1,6 @@
-﻿# saveRobotSetting
+﻿# saveRobotSetting(obsolete)
+
+(I don't recommend it anymore, I suggest use [setCustomSettings](../RobotCustomSettings/AXRobotSetting-set.md))
 
 ## `saveRobotSetting(setting: any) -> {Promise.<boolean>}`
 

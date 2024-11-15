@@ -1,4 +1,6 @@
-﻿# getRobotSetting
+﻿# getRobotSetting(obsolete)
+
+(I don't recommend it anymore, I suggest use [getRobotCustomSettings](../RobotCustomSettings/AXRobotSetting-get.md))
 
 ## `getRobotSetting() -> {Promise.<any>}`
 
