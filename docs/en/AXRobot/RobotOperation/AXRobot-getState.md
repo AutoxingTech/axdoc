@@ -24,6 +24,9 @@ console.log(state.isRemoteMode); // Whether remote control
 console.log(state.battery); // current battery (percentage)
 console.log(state.robotId); // Robot ID
 console.log(state.speed); // current speed (m/s)
+console.log(state.isFrontBumperPressed); //  Detected forward collision, robot stops moving
+console.log(state.isRearBumperPressed); //  Detected rear collision, robot stops moving
+console.log(state.isWaitingForDest); //  Waiting for other robots to leave the temporary stop area
 console.log(state.areaId); // current area ID
 console.log(state.isEmergencyStop); // Whether emergency stop state
 console.log(state.x); // x component of position coordinates

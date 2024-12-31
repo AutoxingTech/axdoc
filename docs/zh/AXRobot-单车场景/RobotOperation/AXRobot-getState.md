@@ -23,6 +23,9 @@ console.log(state.isCharging); // 是否正在充电
 console.log(state.isRemoteMode); // 是否远程控制
 console.log(state.battery); // 当前电量（百分比）
 console.log(state.robotId); // 机器人标识
+console.log(state.isFrontBumperPressed); // 检测到前方碰撞，机器人停止运动
+console.log(state.isRearBumperPressed); // 检测到后方碰撞，机器人停止运动
+console.log(state.isWaitingForDest); // 正在临停部位中，等待其他机器人离开
 console.log(state.speed); // 当前速度（m/s）
 console.log(state.areaId); // 当前区域ID
 console.log(state.isEmergencyStop); // 是否急停状态
