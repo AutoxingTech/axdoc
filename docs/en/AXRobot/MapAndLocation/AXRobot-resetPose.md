@@ -1,6 +1,6 @@
 # Relocation
 
-## `resetPose(mapPose) -> {Promise.<boolean>}`
+## `resetPose(mapPose, isChargingPose) -> {Promise.<boolean>}`
 
 Reset the robot pose
 
@@ -27,6 +27,6 @@ const success = await resetPose({
    x: 0,
    y: 0,
    yaw: 0
-});
+}, false);
 ...
 ```
