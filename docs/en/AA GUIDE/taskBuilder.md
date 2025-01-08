@@ -1,8 +1,8 @@
-# 任务构造函数指引
+# Task constructor guide
 
-提供任务的构造函数，需要者可以直接摘取用到自己项目里面。
+Provide a constructor for the task, which the requester can directly extract and use in their own project.
 
-构造函数
+Constructor function
 
 ```typescript
 
@@ -19,7 +19,7 @@ export class TaskBuilder {
         }
     } 
     /**
-    * 添加点位数据
+    * Add point data
     * @returns
     */
     public addTaskPt(point: any): any {
@@ -31,7 +31,7 @@ export class TaskBuilder {
 export class TaskPoint {
     public taskPt: any
     /**
-    * 点位数据转化
+    * change point data
     * @returns
     */
     constructor(point: any) {
@@ -53,7 +53,7 @@ export class TaskPoint {
         }
     }
     /**
-    * 添加任务动作
+    * addStepActs
     * @returns
     */
     public addStepActs(act: any): any {
@@ -64,7 +64,7 @@ export class TaskPoint {
 }
 export class StepAction {
     /**
-    * 播放音频
+    * PlayAudioAction
     * @returns
     */
     public PlayAudioAction(audioId: string): any {
@@ -86,7 +86,7 @@ export class StepAction {
         }
     }
      /**
-    * 关闭音频 type: 36
+    * CloseAudioAction type: 36
     * @returns
     */
      public CloseAudioAction(audioId: string): any {
@@ -108,7 +108,7 @@ export class StepAction {
         }
     }
     /**
-    * 目的地停留 type: 18
+    * PauseAction type: 18
     * @returns
     */
     public PauseAction(duration: number): any {
@@ -123,7 +123,7 @@ export class StepAction {
         }
     }
     /**
-    * 等待交互 type: 40
+    * WaitAction type: 40
     * @returns
     */
     public WaitAction(duration?: number): any {
@@ -139,7 +139,7 @@ export class StepAction {
         return data
     }
     /**
-    * 操作舱门 type: 6 开舱门 
+    * OpenDoor type: 6 
     * @returns
     */
     public OpenDoor(doorIds: Array<string>): any {
@@ -157,7 +157,7 @@ export class StepAction {
     }
 
     /**
-    * 操作舱门  type: 28 关舱门  
+    * CloseDoor  type: 28 
     * @returns
     */
     public CloseDoor(doorIds: Array<string>): any {
@@ -177,20 +177,20 @@ export class StepAction {
 
 ```
 
-利用上面构造函数创建任务
+Create a task using the constructor above
 
 ```typescript
 
-    // 获取机器人所有点位数据
+    // getPoiList
     const result = await axRobot.getPoiList({
         robotId: "robotId"
     });
     const poiList = result.list
     console.log('poiList', poiList)
 
-    // 获取机器人某个点位
+    // get one poi
     if (poiList.length > 0) {
-        let taskBuilder = new TaskBuilder('测试任务', 1, 2, 20)
+        let taskBuilder = new TaskBuilder('Task', 1, 2, 20)
         const stepAction = new StepAction()
 
         let pt1 = new TaskPoint(poiList[0])
@@ -209,10 +209,10 @@ export class StepAction {
         
         const task = taskBuilder.task
         console.log('task', task)
-        // 发起任务
+        // startTask
         const isOk = await axRobot.startTask(task)
         if (isOk) {
-            console.log("任务发起成功")
+            console.log("Start task success")
         }
     }
 
