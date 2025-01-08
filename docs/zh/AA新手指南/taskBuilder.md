@@ -183,7 +183,7 @@ export class StepAction {
 
     // 获取机器人所有点位数据
     const result = await axRobot.getPoiList({
-        robotId: "robotId"
+        robotId: "<robotId>"
     });
     const poiList = result.list
     console.log('poiList', poiList)
@@ -195,15 +195,16 @@ export class StepAction {
 
         let pt1 = new TaskPoint(poiList[0])
         pt1.addStepActs(stepAction.WaitAction(20))
-        pt1.addStepActs(stepAction.PlayAudioAction('111'))
+        pt1.addStepActs(stepAction.PlayAudioAction('<audioId>'))
         const taskPt1 = pt1.taskPt
+        console.log('taskPt1', taskPt1)
         taskBuilder.addTaskPt(taskPt1)
         
         let pt2 = new TaskPoint(poiList[2])
         pt2.addStepActs(stepAction.WaitAction(3))
-        pt2.addStepActs(stepAction.PlayAudioAction('4'))
-        console.log('pt2', pt2)
+        pt2.addStepActs(stepAction.PlayAudioAction('<audioId>'))
         const taskPt2 = pt2.taskPt
+        console.log('taskPt2', taskPt2)
         taskBuilder.addTaskPt(taskPt2)
 
         
