@@ -175,7 +175,7 @@ export class StepAction {
     }
 
     /**
-    * 顶升-举 （取货） type: 47 --- 仅限顶升机器人
+    * 顶升-举 （取货） type: 47 --- 仅限顶升机器人 / 点位类型：货架点
     * @returns
     */
     public liftUp(): any {
@@ -188,7 +188,7 @@ export class StepAction {
     }
 
     /**
-    * 顶升-降 （放货） type: 48 --- 仅限顶升机器人
+    * 顶升-降 （放货） type: 48 --- 仅限顶升机器人 / 点位类型：货架点
     * @returns
     */
     public liftDown(): any {
