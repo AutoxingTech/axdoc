@@ -173,6 +173,58 @@ export class StepAction {
         }
         return data
     }
+
+    /**
+    * liftUp type: 47
+    * @returns
+    */
+    public liftUp(): any {
+        let data = {
+            "type": 47,
+            "data": {
+            }
+        }
+        return data
+    }
+
+    /**
+    * liftDown type: 48
+    * @returns
+    */
+    public liftDown(): any {
+        let data = {
+            "type": 48,
+            "data": {
+            }
+        }
+        return data
+    }
+
+    /**
+    * rollerLoad type: 54
+    * @returns
+    */
+    public rollerLoad(): any {
+        let data = {
+            "type": 54,
+            "data": {
+            }
+        }
+        return data
+    }
+
+    /**
+    *rollerUnLoad type: 55 
+    * @returns
+    */
+    public rollerUnLoad(): any {
+        let data = {
+            "type": 55,
+            "data": {
+            }
+        }
+        return data
+    }
 }
 
 ```

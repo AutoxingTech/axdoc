@@ -173,6 +173,58 @@ export class StepAction {
         }
         return data
     }
+
+    /**
+    * 顶升-举 （取货） type: 47 --- 仅限顶升机器人
+    * @returns
+    */
+    public liftUp(): any {
+        let data = {
+            "type": 47,
+            "data": {
+            }
+        }
+        return data
+    }
+
+    /**
+    * 顶升-降 （放货） type: 48 --- 仅限顶升机器人
+    * @returns
+    */
+    public liftDown(): any {
+        let data = {
+            "type": 48,
+            "data": {
+            }
+        }
+        return data
+    }
+
+    /**
+    * 辊筒-装载 type: 54 --- 仅限辊筒机器人
+    * @returns
+    */
+    public rollerLoad(): any {
+        let data = {
+            "type": 54,
+            "data": {
+            }
+        }
+        return data
+    }
+
+    /**
+    * 辊筒-卸载 type: 55 --- 仅限辊筒机器人
+    * @returns
+    */
+    public rollerUnLoad(): any {
+        let data = {
+            "type": 55,
+            "data": {
+            }
+        }
+        return data
+    }
 }
 
 ```
