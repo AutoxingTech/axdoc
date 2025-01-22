@@ -22,8 +22,8 @@ sdk 版本 需不低于 1.0.133
 | `ActionType.Continue`      | 继续<br/>参数无        |
 | `ActionType.JackingUp`     | 顶升-举起<br/>参数无     |
 | `ActionType.JackingDown`   | 顶升-放下<br/>参数无     |
-| `ActionType.RollerLoad`    | 滚筒-装载 --- 暂未开通 type: 54<br/>参数无       |
-| `ActionType.RollerUnLoad`  | 滚筒-卸载 --- 暂未开通 type: 55<br/>参数无    |
+| `ActionType.RollerLoad`    | 滚筒-装载<br/>参数无       |
+| `ActionType.RollerUnLoad`  | 滚筒-卸载<br/>参数无    |
 | `ActionType.TaskStart`     | 任务开始<br/>[参数](../../Define/ActionData/Define-ActionData-TaskStart)       |
 | `ActionType.TaskEnd`       | 任务结束<br/>[参数](../../Define/ActionData/Define-ActionData-TaskEnd)         |
 
