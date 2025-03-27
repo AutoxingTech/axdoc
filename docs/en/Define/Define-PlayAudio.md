@@ -13,3 +13,13 @@ Play Audio
 | `interval` | number    | Circular broadcast interval, unit: second, -1 means broadcast only once |
 | `num`      | number    | Total Plays                                                             |
 | `duration` | number    | Total playing time, unit: second                                        |
+
+
+
+### notes
+*   eg: If you want to play audio in other languages, you need to replace the second digit "1" with the corresponding country code, such as changing English 31xx012 to 32xx012
+*   Currently, the supported country codes are: 1 Chinese 2 English, 3 Traditional, 4 Japanese, 5 Korean, 6 German, 7 Thailand, 8 Spain, 9 Poland, 10 Russian, 11 French, 12 Vietnam, 13 Czech, 14 Italy, 15 Türkiye
+
+
+
+
