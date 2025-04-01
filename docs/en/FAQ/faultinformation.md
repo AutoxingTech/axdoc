@@ -1,3 +1,30 @@
+# 故障信息
+
+
+### 参数
+
+| 名称        | 类型                            | 说明          |
+| ----------- | ------------------------------- |-------------|
+| `StateInfo` |  [OnRobotListner](../../Define/Define-OnRobotListener)  | Robot status |
+
+
+### 示例
+
+```JavaScript
+axRobot.subscribeRealState({
+  onStateChanged: state => {
+      chassisErrors: Array
+      // {
+      //    "type":0,   type=0 Pass-through chassis alerts；type=1 Route calculation-related errors；type=2 py service Errors       
+      //    "code":xxxx,  
+      //    "level":0, 0 - error，1 - warning
+      //    "message":"messageXXXXX",
+      //    "priority":true  true -  High priority, needs to be addressed immediately，false - Normal priority, doesn't need immediate attention，If this field is not provided, it defaults to false
+      // }
+  }
+});
+```
+
 | Fault Code | Status                        | Troubleshooting Method                                           
 |------------|-------------------------------|------------------------------------------------------------------
 | 0002       | Failed to fetch map           | Restart the robot or restart the chassis service.                |
@@ -6,7 +33,28 @@
 | 0005       | Starting point not in traversable area | Check if virtual walls are blocking the map information.          |
 | 0006       | Endpoint not in traversable area | Check if virtual walls are blocking the map information.          |
 | 0007       | Starting point and endpoint are the same | Redefine the starting and ending points.                         |
-| 0009       | Path not connected            | Check if there are virtual walls obstructing the route.           |
+| 0008   | Global route expansion information failed            | Check if there is a virtual wall blocking the route  |
+| 0009   | Road is not connected                                | Check if there is a virtual wall blocking the route  |
+| 0010   | Pathfinding timeout                                  | Retry                                               |
+| 0011   | No global route available                           | Reset the starting and ending points                |
+| 0012   | Failed to grab the starting point on the global route | Reset the starting point                           |
+| 0013   | Failed to grab the ending point on the global route  | Reset the ending point                             |
+| 0014   | Pathfinding has been unsuccessful for a long time    | Retry                                               |
+| 0015   | Pathfinding succeeded, but obstacle avoidance failed for a long time | Retry                                               |
+| 0016   | Local obstacle avoidance map data error, current obstacle sensor data is abnormal |                                                     |
+| 500    | Invalid shelf detection point                       |                                                     |
+| 501    | Shelf not recognized                                |                                                     |
+| 502    | Exceeded retry count for docking                    |                                                     |
+| 503    | Shelf location occupied by another robot            |                                                     |
+| 504    | Unable to reach unloading point                     |                                                     |
+| 505    | Shelf has moved significantly                       |                                                     |
+| 506    | Lift is in raised state                              | Lower the shelf                                    |
+| 507    | Invalid shelf area ID                               |                                                     |
+| 508    | No shelf in the shelf area                          | Place the shelf                                    |
+| 510    | No shelf detected in the current area, please confirm and retry | Retry                                               |
+| 511    | Shelf detected in the area but docking failed       |                                                     |
+| 512    | All shelf positions in the area are occupied        |                                                     |
+| 513    | There are empty shelf positions in the area, but placing goods failed |                                                     |
 | 0100       | Exceeded retry attempts for charging | Check for obstacles around the charging station and observe if the robot docks with it. |
 | 0101       | Charging base not recognized  | Ensure the charging station is powered and the robot is correctly docked. |
 | 0102       | Did not receive successful signal from charging station | Ensure the charging station is powered and unobstructed.         |
@@ -18,21 +66,40 @@
 | 1005                            | During positioning or mapping, no obstacle avoidance map /maps/5cm message for more than 1s | Restart the robot                        |
 | 1007                            | Wheel speed is 0 for more than 15 seconds alarm | 1. Obstacles block all passageways; 2. Robot positioning lost, push charging pile for charging pile reset |
 | 1008                            | Robot moves for more than 1 minute without exceeding 1 meter range alarm | Same as 1007                                                     |
+| 1012   | Detected falling risk ahead, correct robot position or create necessary virtual walls |                                                     |
+| 2002   | Please check if there are foreign objects tangled in the wheels causing overload, check and then click continue task button |                                                     |
+| 2006   | Wheel overload                                       |                                                     |
+| 2008   | Detected robot wheel slipping, check and then click continue task button |                                                     |
 | 3001                            | Odom not running                        | Restart the robot                                                |
 | 3002                            | Odom message frequency abnormal         | Restart the robot                                                |
 | 4001                            | Imu not running                         | Restart the robot                                                |
 | 4002                            | Imu message frequency abnormal          | Restart the robot                                                |
 | 4003                            | Imu angular velocity abnormal           | Restart the robot                                                |
 | 4004                            | Vertical angle abnormal                 | Restart the robot                                                |
+| 4008   | Detected robot tipping, please manually clear the fault code |                                                     |
 | 5001                            | Lidar not running                       | Restart the robot                                                |
 | 5002                            | Lidar message frequency abnormal        | Restart the robot                                                |
 | 5003                            | Lidar scan time abnormal                | Restart the robot                                                |
-| 6010                            | Abnormal shutdown reminder              | 1. Shutdown via blue button on client homepage; 2. Press chassis power button for 5s to shut down, directly turn off chassis main power or press power button for more than 10s will trigger this exception |
+| 5007   | Point cloud is empty data                           |                                                     |
+| 5008   | Lidar is blocked by foreign objects at the indicated position, please check and clean the foreign objects |                                                     |
+| 6010   | Detected system abnormal shutdown                   |                                                     |
 | 7001                            | Localization anomaly                    | 1. Click the manual reset button to manually drag the robot icon on the map to set the pose; 2. Push back to the charging pile for reset       |
 | 7002                            | Inaccurate localization quality         | Same as 7001                                                     |
 | 7003                            | Localization mapping message frequency abnormal | Same as 7001                                                   |
+| 7004   | Pose information unreliable                         |                                                     |
+| 8004   | Battery communication disconnected, failed to read battery level |                                                     |
 | 100001                          | No available floors                    | 1. Check if the business bound to the robot has a map; 2. Create a new map and update it to the chassis after marking                   |
 | 100002                          | No station data                        | Same as 100001                                                   |
+| 12005  | Detected shelf offset, please straighten the shelf and retry, or perform the lifting action again |                                                     |
+| 20020  | Chassis link disconnected                           |                                                     |
+| 20009  | Abnormal automatic door or gate                     |                                                     |
+| 20012  | No available elevator                                |                                                     |
+| 20015  | Lift timeout, retrying…                              |                                                     |
+| 20021  | Elevator occupied, rebooking elevator...            |                                                     |
+| 20022  | Elevator occupied, rebooking elevator...            |                                                     |
+| 35021  | Task execution failed, selected charging pile is not within the current map, please select again in the settings |                                                     |
+| 35022  | Task execution failed, selected standby point is not within the current map, please select again in the settings |                                                     |
+| 35023  | Task execution failed, selected destination is not within the current map, please select a point within the current map |                                                     |
 | 38001                           | Not deployed                          | Please bind this robot SN to the business                           |
 | 38023                           | Cross-floor charging pile              | Select the charging pile of the current floor in the settings        |
 | 38023                           | Cross-floor standby point              | Select the standby point of the current floor in the settings        |
@@ -92,4 +159,31 @@
 | 11501                           | Depth camera not calibrated|
 | 11013                           | ihawk depth camera depth value abnormal, possibly obscured (reserved) | 
 | 11501                           | Depth camera not calibrated|
+| 51000  | Area has no link, cannot calculate the route by the shortest distance |                                                     |
+| 51001  | Map data incomplete (missing elevator points, connection points, elevator points), area not connected |                                                     |
+| 51002  | Area route calculation failed, generally caused by unconnected links |                                                     |
+| 51003  | Too few task points, unable to calculate the route (less than 2 points for loop tasks, less than 1 point for non-loop tasks) |                                                     |
+| 51004  | Charging pile across floors                         |                                                     |
+| 51005  | Standby point across floors                         |                                                     |
+| 51006  | Destination across floors                           |                                                     |
+| 51007  | Failed to obtain online elevator for cross-floor tasks |                                                     |
+| 51008  | No online elevator for cross-floor tasks            |                                                     |
+| 51009  | Online elevator for cross-floor task occupied by another robot |                                                     |
+| 51010  | Other error                                          |                                                     |
+| 51011  | Missing task points                                  |                                                     |
+| 51012  | Missing return point                                 |                                                     |
+| 51013  | Missing patrol route                                |                                                     |
+| 51014  | Robot position lost                                 |                                                     |
+| 51015  | Task instruction creation failed                    |                                                     |
+| 51016  | Task canceled                                       |                                                     |
+| 51017  | Failed to return to charging station while charging, execution failed |                                                     |
+| 51018  | In emergency stop mode, no task execution           |                                                     |
+| 51019  | In manual mode, no task execution                   |                                                     |
+| 51020  | In remote control mode, no task execution           |                                                     |
+| 51021  | In mapping mode, no task execution                  |                                                     |
+| 51022  | No robot status obtained, task not executed         |                                                     |
+| 51023  | Battery less than 15%, task not executed            |                                                     |
+| 51024  | Chassis map not set, task not executed              |                                                     |
+| 51032  | Failed to return to charging station while charging, execution failed |                                                     |
+
 
