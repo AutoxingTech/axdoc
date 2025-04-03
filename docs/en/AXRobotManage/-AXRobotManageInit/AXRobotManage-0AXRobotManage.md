@@ -5,6 +5,7 @@ AXRobotManage inherits the previous AXRobot, and the previous AXRobot method is 
 
 ## `AXRobotManage({tokenData: {}, appId: "", secret: "", mode:  "mode", serverUrl: '', wsUrl: ''， viewLanguage： ''})`
 
+
 Constructor
 
 ### Parameters
