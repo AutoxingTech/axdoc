@@ -57,7 +57,7 @@ const rackSizeInfo = await axRobot.setJackAction({type: 0});
 
 | 名称     | 类型  | 说明                                                                |
 |--------|-----|-------------------------------------------------------------------|
-| `args` | any | 获取到的货架尺寸信息 eg: {"pose":[-0.932,-1.379],"ori":-1.743},"width":0.65,"height":0.72} |
+| `args` | any | 获取到的货架尺寸信息 eg: {"pose":{"pos":[-0.932,-1.379],"ori":-1.743},"width":0.65,"height":0.72} |
 
 
 #### 返回值 `Promise.<boolean>`

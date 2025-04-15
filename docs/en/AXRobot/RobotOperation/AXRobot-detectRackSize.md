@@ -55,9 +55,9 @@ const rackSizeInfo = await axRobot.setJackAction({type: 0});
 
 #### Parameters
 
-| Name  | Data Type | Description                    |
-|--------|-----|-------------------------------------------------------------------|
-| `args` | any | Obtained shelf size information eg: {"pose":[-0.932,-1.379],"ori":-1.743},"width":0.65,"height":0.72} |
+| Name  | Data Type | Description                                                                                            |
+|--------|-----|--------------------------------------------------------------------------------------------------------|
+| `args` | any | Obtained shelf size information eg: {"pose":{"pos":[-0.932,-1.379],"ori":-1.743},"width":0.65,"height":0.72} |
 
 
 #### Return value `Promise.<boolean>`
