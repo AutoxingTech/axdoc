@@ -3,7 +3,7 @@
 Operation process: Start recognition -> Drive the robot to obtain shelf size information -> End recognition (after obtaining the robot size information) ->Save the recognized shelf information
 
 
-## 1.Enable it
+## 1. Enable it
 ### `detectRackSize({type: number}) -> {Promise.<boolean>}`
 
 #### Parameters
@@ -30,7 +30,7 @@ const success = await axRobot.setJackAction({type: 0});
 
 
 
-## 2.Obtain shelf size information
+## 2. Obtain shelf size information
 ### `getRackSize() -> {Promise.<any>}`
 
 
@@ -50,7 +50,7 @@ const rackSizeInfo = await axRobot.setJackAction({type: 0});
 
 
 
-## 3.Set shelf size information
+## 3. Set shelf size information
 ### `setRackSize(args) -> {Promise.<boolean>}`
 
 #### Parameters
