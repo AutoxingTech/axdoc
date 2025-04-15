@@ -1,4 +1,4 @@
-﻿#  Automatic recognition of shelf size instructions
+﻿#  Identify shelves
 
 Operation process: Start recognition -> Drive the robot to obtain shelf size information -> End recognition (after obtaining the robot size information) ->Save the recognized shelf information
 
