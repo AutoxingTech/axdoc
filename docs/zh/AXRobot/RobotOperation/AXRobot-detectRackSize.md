@@ -3,7 +3,7 @@
 操作流程 开始识别-> 推动机器人的同时获取货架尺寸信息 -> 结束识别（获取到机器人尺寸信息后） -> 保存识别到的货架信息
 
 
-## 开始识别
+## 1.开始识别
 ### `detectRackSize({type: number}) -> {Promise.<boolean>}`
 
 #### 参数
@@ -30,7 +30,7 @@ const success = await axRobot.setJackAction({type: 0});
 
 
 
-## 获取货架尺寸信息
+## 2.获取货架尺寸信息
 ### `getRackSize() -> {Promise.<any>}`
 
 
@@ -50,7 +50,7 @@ const rackSizeInfo = await axRobot.setJackAction({type: 0});
 
 
 
-## 设置货架尺寸信息
+## 3.设置货架尺寸信息
 ### `setRackSize(args) -> {Promise.<boolean>}`
 
 #### 参数
