@@ -3,8 +3,8 @@
 Due to feedback from many friends that using the documentation directly is still relatively difficult to get started with, in order to facilitate everyone's faster and better understanding of the Yixing Robot JS SDK, we have extracted the following novice on road operations. You can simply copy the code and run it directly; You can also extract certain code snippets and run them directly.
 
 The prerequisite for controlling all operations of the JS SDK bicycle is to first connect to the vehicle. Steps:
--Step 1: To use the SDK, you must first create a new AXRobot private instance
--Step 2: After creating the private instance, the SDK initializes the init
+-Step 1: To use the SDK, you must first create a new AXRobot instance
+-Step 2: After creating the instance, the SDK initializes the init
 -Step 3: Connect the car to the ConnectRobot
 
 After successfully connecting the car, you can start controlling the car and control its behavior. The most commonly used operations include obtaining the robot status, subscribing to the robot status, displaying the map, initiating simple positioning tasks, initiating complex tasks, etc.

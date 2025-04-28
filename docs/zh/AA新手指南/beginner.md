@@ -4,8 +4,8 @@
 
 js-sdk单车控制所有的操作的前提必须先连接上车，步骤：
 
--  step1：首先想要使用sdk必须先创建 AXRobot 私有化实例 new AXRobot
--  step2：创建好私有化实例后，sdk初始化 init
+-  step1：首先想要使用sdk必须先创建 AXRobot 实例 new AXRobot
+-  step2：创建好实例后，sdk初始化 init
 -  step3：连接车 connectRobot
 
 连接车成功后，就可以开始控制车，可以对车的行为进行控制，最常用的操作如：获取机器人状态、订阅机器人状态、地图展示、发起简单点位任务、发起复杂任务等。
@@ -26,7 +26,7 @@ js-sdk单车控制所有的操作的前提必须先连接上车，步骤：
   
 import { AXRobot, AppMode } from "@autoxing/robot-js-sdk";
 
-// 创建 AXRobot 私有化实例
+// 创建 AXRobot 实例
 const axRobot = new AXRobot("<appId>", "<appSecret>", AppMode.WAN_APP, "<serverUrl>", "<websocketUrl>");
 
 try {
