@@ -19,7 +19,7 @@ Play Audio
 ### notes
 *   eg: If you want to play audio in other languages, you need to replace the second digit "1" with the corresponding country code, such as changing English 31xx012 to 32xx012
 *   Currently, the supported country codes are: 1 Chinese 2 English, 3 Traditional, 4 Japanese, 5 Korean, 6 German, 7 Thailand, 8 Spain, 9 Poland, 10 Russian, 11 French, 12 Vietnam, 13 Czech, 14 Italy, 15 Türkiye
-
+*   The fourth bit of audioId 1:Normal mode  2:Factory mode   eg Restaurant Voice: 31x1012   Factory voice: 31x2012 
 
 
 
