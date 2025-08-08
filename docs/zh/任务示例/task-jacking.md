@@ -29,7 +29,9 @@
 				"name": "<poiName>"
 			},
 			stepActs: [{
-				type: 47 // 举起顶升
+				type: 47, // 举起顶升
+				"data": {
+            	}
 			}]
 		}]
 	}
@@ -61,7 +63,9 @@
 				"name": "<poiName>"
 			},
 			stepActs: [{
-				type: 48 // 放下顶升
+				type: 48, // 放下顶升
+				"data": {
+            	}
 			}]
 		}]
 	}

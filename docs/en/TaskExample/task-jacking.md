@@ -30,7 +30,9 @@ Lift up point A (requires point A to be a shelf point):
 				"name": "<poiName>"
 			},
 			stepActs: [{
-				type: 47 // Raise the top up
+				type: 47, // Raise the top up
+				"data": {
+            	}
 			}]
 		}]
 	}
@@ -62,7 +64,9 @@ Place the top lift at point A (the type of point A must be a shelf point):
 				"name": "<poiName>"
 			},
 			stepActs: [{
-				type: 48 // Put down the top lift
+				type: 48, // Put down the top lift
+				"data": {
+            	}
 			}]
 		}]
 	}
