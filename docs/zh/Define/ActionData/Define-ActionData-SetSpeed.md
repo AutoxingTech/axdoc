@@ -1,6 +1,6 @@
 # ActionData - SetSpeed
 
-等待交互动作参数
+设置速度动作参数
 
 ## 属性
 
