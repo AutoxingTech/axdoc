@@ -8,7 +8,7 @@
 
 | 名称         | 类型                              | 说明         |
 | ------------ | --------------------------------- | ------------ |
-| `cruiseInfo` | [CruiseInfo](../../8.数据定义/Define-CruiseInfo) | 巡游路线信息 |
+| `cruiseInfo` | [CruiseInfo](../../8.数据定义/Define-CruiseInfo.md) | 巡游路线信息 |
 
 ### 返回值 `Promise.<boolean>`
 
