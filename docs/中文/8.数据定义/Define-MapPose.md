@@ -10,4 +10,4 @@
 
 ## 继承自
 
-[Pose](Define-Pose)
+[Pose](Define-Pose.md)
