@@ -10,7 +10,7 @@
 
 | 名称   | 类型                          | 说明     |
 | ------ | ----------------------------- | -------- |
-| `params` | [RequestQueueTaskParam](../../../Define/Define-RequestQueueTaskParam) | 任务信息 |
+| `params` | [RequestQueueTaskParam](../../8.数据定义/Define-RequestQueueTaskParam) | 任务信息 |
 
 ### 返回值 `Promise.<any>`
 | 名称         | 类型            | 说明                          |

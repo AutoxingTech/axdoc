@@ -8,7 +8,7 @@
 
 | Name | Data Type | Description |
 | ------ | --------------------------------- | -------- |
-| `settingsData` | [SettingsData](../../../Define/Define-SettingsData) | 机器人设置数据 |
+| `settingsData` | [SettingsData](../../8.数据定义/Define-SettingsData.md) | 机器人设置数据 |
 
 ### 示例
 

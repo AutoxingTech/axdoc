@@ -10,7 +10,7 @@
 
 | 名称               | 类型                                                        | 说明     |
 | ------------------ | ------------------------------------------------ | -------- |
-| `taskRequestParam` | [TaskRequestParam](../../../Define/Define-TaskRequestParam) | 请求参数对象 |
+| `taskRequestParam` | [TaskRequestParam](../../8.数据定义/Define-TaskRequestParam) | 请求参数对象 |
 
 ### 返回值 `Promise.<any>`
 

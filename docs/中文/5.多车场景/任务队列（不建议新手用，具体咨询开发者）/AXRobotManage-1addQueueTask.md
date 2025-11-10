@@ -10,7 +10,7 @@
 
 | 名称   | 类型                          | 说明     |
 | ------ | ----------------------------- | -------- |
-| `queueTask` | [QueueTaskInfo](../../../Define/Define-QueueTaskInfo) | 任务信息 |
+| `queueTask` | [QueueTaskInfo](../../8.数据定义/Define-QueueTaskInfo) | 任务信息 |
 
 ### 返回值 `Promise.<boolean>`
 

@@ -19,7 +19,7 @@
 ### 返回值 `Promise.<any>`
 | 名称         | 类型                          | 说明     |
 |------------| ----------------------------- | -------- |
-| `taskInfo` | [TaskInfo](../../../Define/Define-TaskInfo) | 任务信息 |
+| `taskInfo` | [TaskInfo](../../8.数据定义/Define-TaskInfo) | 任务信息 |
 
 
 ### 示例
