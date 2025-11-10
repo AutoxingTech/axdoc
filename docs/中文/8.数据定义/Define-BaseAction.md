@@ -6,6 +6,6 @@
 
 | 名称   | 数据类型                          | 说明     |
 | ------ | --------------------------------- | -------- |
-| `type` | [ActionType](../../Define/Define-ActionType) | 动作类型 |
+| `type` | [ActionType](Define-ActionType) | 动作类型 |
 | `data` | object                            | 动作参数 |
 
