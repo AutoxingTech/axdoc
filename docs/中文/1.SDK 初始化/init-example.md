@@ -27,7 +27,7 @@ if (successed) {
 | -------- | -------- | -------- |
 | `appId` | string   | 应用 ID，可向相关运营人员申请提供 |
 | `appSecret` | string   | 数据请求密钥，可向相关运营人员申请提供 |
-| [`AppMode`](../../8.数据定义/Define-AppMode) | string   | 应用模式 |
+| [`AppMode`](../8.数据定义/Define-AppMode.md) | string   | 应用模式 |
 | `serverUrl` | string   |可选 <br> 如果不填，服务默认使用国服接入点<br> serverUrl: <br>国服接入点:"https://api.autoxing.com/"<br>海外接入点:"https://apiglobal.autoxing.com/"<br> |
 | `websocketUrl` | string   | 可选 <br> 如果不填，服务默认使用国服接入点<br>websocketUrl:<br>国服接入点:"wss://service.autoxing.com/"<br>海外接入点:"wss://serviceglobal.autoxing.com/" |
 

@@ -23,7 +23,7 @@ if (successed) {
 | -------- | -------- | -------- |
 | `appId` | string   | 应用 ID，可向相关运营人员申请提供 |
 | `appSecret` | string   | 数据请求密钥，可向相关运营人员申请提供 |
-| [`AppMode`](../../8.数据定义/Define-AppMode) | string   | 应用模式 |
+| [`AppMode`](../8.数据定义/Define-AppMode.md) | string   | 应用模式 |
 | `serverUrl` | string   |私有化服务地址|
 | `websocketUrl` | string   | 可选 <br> 若只填写serverUrl，不填写websocketUrl，则websocketUrl会根据serverUrl自动生成websocket连接地址|
 
