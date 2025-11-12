@@ -49,8 +49,7 @@ AXRobotManage继承之前AXRobot，之前AXRobot方法在AXRobotManage实例化�
                 serverUrl: serverUrl, // 私有化serverUrl 
                 wsUrl: wsUrl, // 私有化wsUrl
                 viewLanguage: getApp().globalData.language, // 语言 可不传
-              }
-            );
+            });
            
 
         ```
@@ -62,14 +61,14 @@ AXRobotManage继承之前AXRobot，之前AXRobot方法在AXRobotManage实例化�
 
             // 创建 AXRobotManage 私有化实例
             const axRobot = new AXRobotManage(
-              new AXRobot({
+              {
                 appId:appId, // 机器人管理平台根据权限获取appid
                 secret: appSecret, // 机器人管理平台根据权限获取appSecret
                 mode: AppMode.WAN_APP, // 应用模式:AppMode已在包内export，可直接引入
                 serverUrl: serverUrl, // serverUrl 
                 wsUrl: wsUrl, // wsUrl
                 viewLanguage: getApp().globalData.language, // 语言 可不传
-              })
+              }
             );
 
         ```
