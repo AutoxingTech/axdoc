@@ -29,7 +29,8 @@ deliveryInfo：
 
 | name    | type | describe              |
 | ------- | -------- | ----------------- |
-| `runSpeed`     | string   | run speed   |
+| `runSpeed`     | number   |  run speed 10 ~ 120   |
+| `angular_velocity`     | float   | 0.1 ~ 1.2   |
 
 soundInfo:
 

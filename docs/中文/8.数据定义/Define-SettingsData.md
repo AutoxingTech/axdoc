@@ -29,7 +29,8 @@ deliveryInfo：
 
 | 名称    | 数据类型 | 说明              |
 | ------- | -------- | ----------------- |
-| `runSpeed`     | string   | 行驶速度   |
+| `runSpeed`     | number   | 运行速度 10 ~ 120   |
+| `angular_velocity`     | float   |旋转速度 0.1 ~ 1.2   |
 
 soundInfo:
 
