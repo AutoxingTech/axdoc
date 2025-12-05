@@ -1,6 +1,6 @@
 ﻿# 获取机器人设置(过时)
 
-(不建议了，建议使用[getRobotCustomSettings](../RobotCustomSettings/AXRobotSetting-get.md))
+(不建议了，建议使用[getRobotCustomSettings](../6\)%20机器人设置/AXRobotSetting-get.md)
 
 ## `getRobotSetting() -> {Promise.<any>}`
 
@@ -14,7 +14,7 @@ settingsData 是一个JSON对象，没有严格验证设置对象的格式，但
 | 设置项      |         字段         | 类型      | 说明                     |
 | ---------- | -------------------- | --------- | ------------------------ |
 | 速度        | delivery.runSpeed    | number    | 速度，单位：mm/s         |
-| 行驶模式    | runMode              | number    | 1：灵活避障行驶; 2： 沿轨道行驶;3： 严格沿轨道行驶 |
+| 行驶模式    | runMode              | number    | 行驶模式,默认为1 <br/>1:灵活躲避障碍<br/>2:延轨道行驶<br/>3:严格沿轨道行驶<br/>4:按轨迹行驶不补货架对接点<br/>5:分段模式<br/> |
 | 默认返航点  | basic.standby        | string    |                               |
 | 默认充电桩  | basic.char           | string    |                          |
 | 音量        | sound.avoidVolume    | number    | 0-10（0% - 100%）        |

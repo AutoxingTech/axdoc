@@ -126,7 +126,7 @@ let taskInfo = await axRobot.getTaskDetail(taskId);
 	"isFinish": false, //是否完成
 	"robotId": "8981307a02163yT",
 	"robotName": "63yT",
-	"runMode": 1, //运行模式
+	"runMode": 1, //行驶模式,默认为1 <br/>1:灵活躲避障碍<br/>2:延轨道行驶<br/>3:严格沿轨道行驶<br/>4:按轨迹行驶不补货架对接点<br/>5:分段模式<br/>
 	"buildingId": "64xxxxxxxc", //楼宇id
 	"isExcute": false, //是否执行
 	"createTime": 1706079196905, //创建时间

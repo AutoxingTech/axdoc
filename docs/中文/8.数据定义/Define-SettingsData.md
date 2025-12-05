@@ -11,7 +11,7 @@
 | `moderate`   | float   | 颠簸减速阈值 （0 - 1.0）|
 | `moderateSwitch` | boolean   | 颠簸减速开关|
 | `playLanguage` | number   | 播放语言|
-| `runMode`   | number   | 运行模式 1：灵活避障； 2： 沿轨道行驶； 3：严格沿轨道行驶|
+| `runMode`   | number   | 行驶模式,默认为1 <br/>1:灵活躲避障碍<br/>2:延轨道行驶<br/>3:严格沿轨道行驶<br/>4:按轨迹行驶不补货架对接点<br/>5:分段模式<br/>|
 | `skipPtDelay`   | number   | 跳点延时 |
 | `skipPtMode`   | number   | 跳点模式 1：打开 2：关闭|
 | `sound`   | soundInfo   | 声音设置|

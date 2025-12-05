@@ -11,7 +11,7 @@ robot custom SettingsData
 | `moderate`   | float   | moderate （0 - 1.0）|
 | `moderateSwitch` | boolean   | moderate switch|
 | `playLanguage` | number   | play language|
-| `runMode`   | number   | runmode 1： Flexible Obstacle Avoidance Driving. 2： Driving Along the Track. 3：Strict Driving Along the Track|
+| `runMode`   | number   | runMode,default 1 <br/>1:Flexible Obstacle Avoidance Driving<br/>2:Driving Along the Track<br/>3:Strict Driving Along the Track<br/>4:trajectory-based travel without replenishing the rack docking points<br/>5:Segmented Mode<br/>|
 | `skipPtDelay`   | number   | skipPtDelay |
 | `skipPtMode`   | number   | skipPtMode 1:open 2:close|
 | `sound`   | soundInfo   | sound|
