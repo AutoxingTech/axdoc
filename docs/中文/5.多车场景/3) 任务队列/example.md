@@ -42,6 +42,8 @@
         "ignorePublicSite": true, // 是否忽略公共站点,默认是不忽略
         "speed": -1, // 机器人行驶速度，单位：米/秒 建议速度 0.4~1.0
         "sourceType": 6, // 任务来源类型 二开要求必须是6
+        "returnDest": 1, // 返航设置  0无效  1按车端设置  2不返航  3返航指定点，必须设置backPt  4空闲返航，必须设置backPt
+        "returnTime": 5, // 空闲时长，单位：秒
         "curPt": {
             "stepActs": [
                 {
