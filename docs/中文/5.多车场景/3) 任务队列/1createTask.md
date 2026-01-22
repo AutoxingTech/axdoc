@@ -2,7 +2,7 @@
 
 ## 方法
 
-## `createTaskV3(taskObj) -> {Promise.<any>}`
+## `createQueueTask(taskObj) -> {Promise.<any>}`
 
 根据业务id获取区域列表
 
@@ -27,6 +27,8 @@ taskObj
 | `ignorePublicSite` | boolean | 是否忽略公共站点,默认是不忽略 |
 | `speed` | integer |   机器人行驶速度，单位：米/秒 建议速度 0.4~1.0 |
 | `sourceType` | integer |  任务来源类型 二开要求必须是6 |
+| `returnDest` | integer |  返航设置  0无效  1按车端设置  2不返航  3返航指定点，必须设置backPt  4空闲返航，必须设置backPt |
+| `returnTime` | integer |  空闲时长，单位：秒 |
 | `curPt` | object |  机器人当前位置  |
 | `taskPts` | array |  任务点列表 |
 | `backPt` | object |  返航点 |
@@ -48,7 +50,7 @@ taskObj
 
 const taskObj = {
   "dispatchType": 2, // 任务类型 0 普通任务  2 队列任务
-  "name": "创建任务V3_" + new Date().getTime(),
+  "name": "创建队列任务_" + new Date().getTime(),
   "businessId": "${businessId}", // 业务标识，如果创建队列任务，则该字段必传；如果是普通任务，则该字段可以为空
   // "robotId": "${robotSn}", // 执行任务的机器人标识，如果创建普通任务，则该字段必传；如果是队列任务，则该字段可以为空，但要保证 businessId 对应的业务下有机器人
   "runNum": 1, // 执行次数 默认为1,0表示无限循环
@@ -59,6 +61,8 @@ const taskObj = {
   "ignorePublicSite": true, // 是否忽略公共站点,默认是不忽略
   "speed": -1, // 机器人行驶速度，单位：米/秒 建议速度 0.4~1.0
   "sourceType": 6, // 任务来源类型 二开要求必须是6
+  "returnDest": 1, // 返航设置  0无效  1按车端设置  2不返航  3返航指定点，必须设置backPt  4空闲返航，必须设置backPt
+  "returnTime": 5, // 空闲时长，单位：秒
   "curPt": {
       "stepActs": [
           {
@@ -112,17 +116,17 @@ const taskObj = {
           "name": "19层待命点",
           "id": "695a1dccfff76da93edbf6d8"
       }
-  }
+  },
   
 }
 try {
-  const res = await this.axRobot.createTaskV3(taskObj)
+  const res = await this.axRobot.createQueueTask(taskObj)
   this.taskId = res.taskId
-  console.log('createTaskV3 Success:', res)
+  console.log('createQueueTask Success:', res)
   // createTaskV3 Success: {taskId: 'tsn-be48a330-6044-45cc-9756-a9ed7ff9d3d4'}
   console.log('当前任务id', this.taskId)
 } catch (error) {
-  console.log('createTaskV3 Error:', error)
+  console.log('createQueueTask Error:', error)
 }
 ...
 ```

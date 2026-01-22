@@ -2,7 +2,7 @@
 
 ## 方法
 
-## `cancelTaskV3(taskId) -> {Promise.<Boolean>}`
+## `cancelQueueTaskById(taskId) -> {Promise.<Boolean>}`
 
 根据业务id获取区域列表
 
@@ -22,11 +22,11 @@
 ```javascript
 ...
 try {
-  const res =await this.axRobot.cancelTaskV3(this.taskId)
-  console.log('cancelTaskV3 Success:', res)
+  const res =await this.axRobot.cancelQueueTaskById(this.taskId)
+  console.log('cancelQueueTaskById Success:', res)
   // cancelTaskV3 Success: true
 } catch (error) {
-  console.log('cancelTaskV3 Error:', error)
+  console.log('cancelQueueTaskById Error:', error)
 }
 ...
 ```

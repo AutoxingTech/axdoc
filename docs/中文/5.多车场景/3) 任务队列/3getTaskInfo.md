@@ -2,7 +2,7 @@
 
 ## 方法
 
-## `getTaskInfoV3(taskId) -> {Promise.<any>}`
+## `getQueueTaskDetails(taskId) -> {Promise.<any>}`
 
 根据业务id获取区域列表
 
@@ -48,10 +48,10 @@
 ```javascript
 ...
 try {
-  const res = await this.axRobot.getTaskInfoV3(this.taskId)
-  console.log('getTaskInfoV3 Success:', res)
+  const res = await this.axRobot.getQueueTaskDetails(this.taskId)
+  console.log('getQueueTaskDetails Success:', res)
 } catch (error) {
-  console.log('getTaskInfoV3 Error:', error)
+  console.log('getQueueTaskDetails Error:', error)
 }
 ...
 ```
@@ -62,7 +62,7 @@ try {
 ...
   未执行:
 	{
-    "name": "创建任务V3_1767691318183",
+    "name": "创建队列任务_1767691318183",
     "taskId": "tsn-a56c4cb5-e0c7-463a-aa36-b35e6d5d68f2",
     "runType": 21,
     "taskType": 4,
@@ -146,7 +146,7 @@ try {
   已执行：
   {
     "taskId": "tsn-75321169-a539-4ca2-bc8d-4964be35dff9",
-    "name": "创建任务V3_1767691519690",
+    "name": "创建队列任务_1767691519690",
     "taskPts": [
         {
             "areaId": "695a1dd928359b42d68a5f0f",

@@ -27,7 +27,7 @@
   })
   
   // 创建任务方法
-  async createTaskV3 () {
+  async createQueueTask () {
       // robotId:执行任务的机器人标识，如果创建普通任务，则该字段必传；如果是队列任务，则该字段可以为空，但要保证 businessId 对应的业务下有机器人
       const taskObj = {
         "dispatchType": 2, // 任务类型 0 普通任务  2 队列任务
@@ -99,30 +99,30 @@
         
       }
       try {
-        const res = await this.axRobot.createTaskV3(taskObj)
+        const res = await this.axRobot.createQueueTask(taskObj)
         this.taskId = res.taskId
-        console.log('createTaskV3 Success:', res)
+        console.log('createQueueTask Success:', res)
         console.log('当前任务id', this.taskId)
       } catch (error) {
-        console.log('createTaskV3 Error:', error)
+        console.log('createQueueTask Error:', error)
       }
     }
     // 取消任务方法
-    async cancelTaskV3 () {
+    async cancelQueueTaskById () {
       try {
-        const res =await this.axRobot.cancelTaskV3(this.taskId)
-        console.log('cancelTaskV3 Success:', res)
+        const res =await this.axRobot.cancelQueueTaskById(this.taskId)
+        console.log('cancelQueueTaskById Success:', res)
       } catch (error) {
-        console.log('cancelTaskV3 Error:', error)
+        console.log('cancelQueueTaskById Error:', error)
       }
     }
     // 获取任务详情方法
-    async getTaskInfoV3 () {
+    async getQueueTaskDetails () {
       try {
-        const res = await this.axRobot.getTaskInfoV3(this.taskId)
-        console.log('getTaskInfoV3 Success:', res)
+        const res = await this.axRobot.getQueueTaskDetails(this.taskId)
+        console.log('getQueueTaskDetails Success:', res)
       } catch (error) {
-        console.log('getTaskInfoV3 Error:', error)
+        console.log('getQueueTaskDetails Error:', error)
       }
     },
 
