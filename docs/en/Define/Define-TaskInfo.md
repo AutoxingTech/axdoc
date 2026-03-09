@@ -9,7 +9,7 @@ Mission information
 | `name` | string                                       | task name                                        |
 | `robotId` | string                                       | Robot ID                                                                                                             |
 | `routeMode`        | number  | 1 Route calculation by sequence of task points, 2 Route calculation by shortest path. Default is 1.             |
-| `runMode`          | number  | runMode,default 1 <br/>1:Flexible Obstacle Avoidance Driving<br/>2:Driving Along the Track<br/>3:Strict Driving Along the Track<br/>4:trajectory-based travel without replenishing the rack docking points<br/>5:Segmented Mode<br/>  |
+| `runMode`          | number  | runMode,default 1 <br/>1:Flexible Obstacle Avoidance Driving<br/>2:Driving Along the Track<br/>3:Strict Driving Along the Track<br/>5:Segmented Mode<br/>  |
 | `detourRadius` | number | 0 No obstacle avoidance, 1: Obstacle avoidance radius of 1 meter.
 | `ignorePublicSite` | boolean | Whether to ignore public sites, default is false.                                                              |
 | `runNum`           | number  | Number of task executions. Default is 1; 0 indicates infinite loop.                                                           |
