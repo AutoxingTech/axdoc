@@ -1,6 +1,6 @@
 # 取消任务
 
-## 方法
+## 方法(版本： 1.0.138及以上)
 
 ## `cancelQueueTaskById(taskId) -> {Promise.<Boolean>}`
 

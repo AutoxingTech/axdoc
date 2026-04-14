@@ -1,6 +1,6 @@
 # 创建任务队列
 
-## 方法
+## 方法(版本： 1.0.138及以上)
 
 ## `createQueueTask(taskObj) -> {Promise.<any>}`
 
