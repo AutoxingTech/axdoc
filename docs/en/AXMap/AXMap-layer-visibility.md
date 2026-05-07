@@ -1,5 +1,8 @@
 # Map Layer Visibility
 
+!!! note "Version Requirement"
+    Map layer visibility feature requires SDK version **1.0.140** or above.
+
 ## `setBackCustomImg(img) -> {void}`
 
 Set custom background image
