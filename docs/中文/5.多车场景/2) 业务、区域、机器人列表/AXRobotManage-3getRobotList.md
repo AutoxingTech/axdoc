@@ -28,7 +28,6 @@
 | `hasObstruction`   | boolean |  机器人标识 |
 | `isCharging`       | boolean |  是否在充电 |
 | `isEmergencyStop`  | boolean |  是否按下了急停 |
-| `isGoHome`         | boolean |  是否正在回桩 |
 | `isManualMode`     | boolean |  是否处于手动模式 |
 | `isRemoteMode`     | boolean |  是否处于远控模式 |
 | `errors`           | Array<integer> |  故障码 |

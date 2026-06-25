@@ -24,8 +24,8 @@ if (successed) {
 | `appId` | string   | 应用 ID，可向相关运营人员申请提供 |
 | `appSecret` | string   | 数据请求密钥，可向相关运营人员申请提供 |
 | [`AppMode`](../8.数据定义/Define-AppMode.md) | string   | 应用模式 |
-| `serverUrl` | string   |私有化服务地址|
-| `websocketUrl` | string   | 可选 <br> 若只填写serverUrl，不填写websocketUrl，则websocketUrl会根据serverUrl自动生成websocket连接地址|
+| `serverUrl` | string   |私有化服务地址<br> 如果浏览器域名访问：https://apilocal.autoxing.com/<br> 如果Ip+端口号访问：https://IP:4443/ |
+| `websocketUrl` | string   | 可选 <br> 若只填写serverUrl，不填写websocketUrl，则websocketUrl会根据serverUrl自动生成websocket连接地址<br> 如果浏览器域名访问wss://servicelocal.autoxing.com/ <br> 如果Ip+端口号访问：wss://IP:4443/|
 
 > * **说明:** 
 > * **1:** 版本要求：使用sdk v1.0.74或以上
