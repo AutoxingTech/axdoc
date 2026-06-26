@@ -27,7 +27,7 @@ const task4 = {
         {
           "type": 47, // Lifting action: Lift up
           "data": {
-            "useAreaId": "672d7001c26e184435add4d9" // Use shelf area, required shelf area A ID
+            "useAreaId": "672d7001c26e184435add4d9" // Use shelf area, required shelf area A ID。 useAreaId: unspecified shelf  areaId: Designated priority shelf  
           }
         }
       ]
@@ -47,7 +47,7 @@ const task4 = {
         {
           "type": 48, // Lifting action: Lower down
           "data": {
-            "useAreaId": "672d705272c9edf34d02a6a5" // Use shelf area, required shelf area B ID
+            "useAreaId": "672d705272c9edf34d02a6a5" // Use shelf area, required shelf area B ID。 useAreaId: unspecified shelf  areaId: Designated priority shelf  
           }
         }
       ]

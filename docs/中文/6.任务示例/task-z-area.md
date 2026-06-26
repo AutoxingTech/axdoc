@@ -27,7 +27,7 @@ const task4 = {
         {
           "type": 47, // 举升动作 ： 举起
           "data": {
-            "useAreaId": "672d7001c26e184435add4d9" // 使用货架区 ，必填 货架区A id
+            "useAreaId": "672d7001c26e184435add4d9" // 使用货架区 ，必填 货架区A id useAreaId 不指定货架  areaId 指定优先货架 
           }
         }
       ]
@@ -47,7 +47,7 @@ const task4 = {
         {
           "type": 48, // 举升动作 ： 放下
           "data": {
-            "useAreaId": "672d705272c9edf34d02a6a5" // 使用货架区 ，必填 货架区B id
+            "useAreaId": "672d705272c9edf34d02a6a5" // 使用货架区 ，必填 货架区B id层  useAreaId 不指定货架  areaId 指定优先货架 
           }
         }
       ]
