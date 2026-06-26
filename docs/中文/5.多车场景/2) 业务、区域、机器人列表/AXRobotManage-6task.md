@@ -1,0 +1,56 @@
+# 开始执行任务-指定车辆
+
+## 方法
+
+## `startTask(task， robotId?: string) -> {Promise.<boolean>}`
+
+开始执行任务。
+
+### 参数
+
+| 名称   | 类型                          | 说明     |
+| ------ | ----------------------------- | -------- |
+| `task` | [TaskInfo](../../8.数据定义/Define-TaskInfo.md) | 任务信息 |
+| `robotId` | String | 机器人sn |
+
+### 返回值 `Promise.<boolean>`
+
+是否成功
+
+* `true` - 成功
+* `false` - 失败
+
+### 示例
+
+```javascript
+...
+let task = {
+  name: "多点送餐",
+  runNum: 1,
+  taskType: 2,
+  runType: 21,
+  pts: [
+    {
+      x: 0.11,
+      y: 1.22,
+      yaw: 89, 
+      areaId: "xxxxxxxxxxxxxx",
+      type: -1,
+      ext: {},
+      stepActs: [
+        {
+          type: ActionType.PlayAudio,
+          data: {...}
+        },
+        ...
+      ]
+    },
+    ...
+  ]
+}
+const success = await axRobot.startTask(task, robotId);
+...
+```
+
+
+

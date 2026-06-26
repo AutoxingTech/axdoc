@@ -3,7 +3,7 @@
 
 ???+ example 
 
-    === "无需等待销毁结果"
+    === "销毁实例"
         ## `destroy() -> {void}`
 
         销毁机器人操作实例
@@ -23,7 +23,7 @@
         axRobot.destroy();
         ...
         ```
-    === "需要等待销毁结果"
+    === "断连车"
         ## `destroyConnect() -> {Promise.<boolean>}`
 
         销毁机器人操作实例
